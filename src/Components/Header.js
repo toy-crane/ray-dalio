@@ -7,8 +7,8 @@ export const Header = () => {
 	} = useContext(PageContext);
 	return (
 		<>
-			<div>Q{page}</div>
-			<div>
+			<div className="fl w-90">Q{page}</div>
+			<div className="fl w-10">
 				{page}/{pageCount}
 			</div>
 		</>

@@ -1,20 +1,12 @@
 import React, { createContext, useReducer } from "react";
-import PageReducer from "../Reducer/PageReducer";
+import { PageReducer, QUIZ_LIST } from "../Reducer/Page";
 
-const QUIZ_LIST = [
-	{
-		id: 1,
-		question: "몇살이니?",
-		answers: ["50살보다 많아", "50살보다 작아"],
-	},
-	{
-		id: 2,
-		question: "어디 살아?",
-		answers: ["강남?", "강북?"],
-	},
-];
-
-const initialState = { page: 0, pageCount: QUIZ_LIST.length };
+const initialState = {
+	page: 0,
+	pageCount: QUIZ_LIST.length,
+	question: QUIZ_LIST[0]["question"],
+	answers: QUIZ_LIST[0]["answers"],
+};
 const PageContext = createContext(initialState);
 
 function PageProvider(props) {
@@ -25,4 +17,4 @@ function PageProvider(props) {
 		</PageContext.Provider>
 	);
 }
-export { PageContext, PageProvider, QUIZ_LIST };
+export { PageContext, PageProvider };
