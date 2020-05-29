@@ -2,7 +2,7 @@ import React, { createContext, useReducer } from "react";
 import { PageReducer, QUIZ_LIST } from "../Reducer/Page";
 
 const initialState = {
-	page: 0,
+	page: 1,
 	pageCount: QUIZ_LIST.length,
 	question: QUIZ_LIST[0]["question"],
 	answers: QUIZ_LIST[0]["answers"],
