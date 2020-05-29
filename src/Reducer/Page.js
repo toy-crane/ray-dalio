@@ -56,7 +56,7 @@ export const QUIZ_LIST = [
 		],
 	},
 	{
-		id: 6,
+		id: 7,
 		question:
 			"내일 주식이 떨어질 확률이 60%라면 보유한 주식를 어떻게 할 것인가?",
 		answers: [
@@ -66,7 +66,7 @@ export const QUIZ_LIST = [
 		],
 	},
 	{
-		id: 7,
+		id: 8,
 		question: "원유 ETN, 곱버스, TQQQ, SQQQ에 대해서 들어봤다.",
 		answers: [
 			"잘 알고 있고, 투자도 해봤다.",
