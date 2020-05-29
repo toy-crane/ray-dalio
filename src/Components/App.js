@@ -30,6 +30,20 @@ const theme = {
 	},
 };
 
+const globalCSS = css`
+	@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+	${emotionReset}
+	*, *::after, *::before {
+		box-sizing: border-box;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-smoothing: antialiased;
+	}
+	button:focus {
+		outline: 0;
+	}
+`;
+
 const Container = styled.section`
 	max-width: 880px;
 	margin: 0 auto;
@@ -38,21 +52,7 @@ const Container = styled.section`
 function App() {
 	return (
 		<>
-			<Global
-				styles={css`
-					@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
-					${emotionReset}
-					*, *::after, *::before {
-						box-sizing: border-box;
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						font-smoothing: antialiased;
-					}
-					button:focus {
-						outline: 0;
-					}
-				`}
-			/>
+			<Global styles={globalCSS} />
 			<PageProvider>
 				<ThemeProvider theme={theme}>
 					<Container>
