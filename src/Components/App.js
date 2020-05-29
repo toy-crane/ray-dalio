@@ -4,7 +4,10 @@ import { ThemeProvider } from "emotion-theming";
 import styled from "@emotion/styled";
 import emotionReset from "emotion-reset";
 import { Quiz } from "./Quiz";
+import { Home } from "./Home";
+import { Result } from "./Result";
 import { PageProvider } from "../Context/PageContext";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 const theme = {
 	fontSizes: [10, 25, 45],
@@ -54,9 +57,21 @@ function App() {
 			<Global styles={globalCSS} />
 			<PageProvider>
 				<ThemeProvider theme={theme}>
-					<Container>
-						<Quiz></Quiz>
-					</Container>
+					<BrowserRouter>
+						<Container>
+							<Switch>
+								<Route exact path="/">
+									<Home></Home>
+								</Route>
+								<Route path="/quizzes">
+									<Quiz></Quiz>
+								</Route>
+								<Route path="/result">
+									<Result></Result>
+								</Route>
+							</Switch>
+						</Container>
+					</BrowserRouter>
 				</ThemeProvider>
 			</PageProvider>
 		</>
