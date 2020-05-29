@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import { AnswerList } from "./AnswerList";
 import { PageContext } from "../Context/PageContext";
-import { Header } from "./Header";
-
-
+import { QuizHeader } from "./QuizHeader";
+import { Question } from "./Question";
+import { AnswerList } from "./AnswerList";
 
 export const Quiz = () => {
 	const {
@@ -11,9 +10,9 @@ export const Quiz = () => {
 	} = useContext(PageContext);
 	return (
 		<div>
-			<Header></Header>
-			<div>{question}</div>
-			<AnswerList answers={answers} />
+			<QuizHeader />
+			<Question question={question}></Question>
+			<AnswerList answers={answers}></AnswerList>
 		</div>
 	);
 };
