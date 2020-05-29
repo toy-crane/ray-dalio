@@ -10,7 +10,7 @@ import { PageProvider } from "../Context/PageContext";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 
 const theme = {
-	fontSizes: [10, 25, 45],
+	fontSizes: [10, 25, 45, 65],
 	space: [5, 10, 20, 30, 100],
 	lineHeights: {
 		heading: 1.25,

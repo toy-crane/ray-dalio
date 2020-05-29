@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { PageContext } from "../Context/PageContext";
-import { Button } from "rebass";
+import Button from "./Button";
 
 export const Answer = (props) => {
 	const { dispatch } = useContext(PageContext);
