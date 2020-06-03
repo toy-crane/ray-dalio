@@ -24,12 +24,11 @@ export const Home = () => {
 				my={2}
 				src="https://i.pinimg.com/originals/bb/15/28/bb1528ffb469515a407e81438e9eab9d.jpg"
 				sx={{
-					width: ["100%"],
 					borderRadius: 8,
 				}}
 				opacity={0.8}
 			/>
-			<Button onClick={() => history.push("/quizzes")}>
+			<Button onClick={() => history.push("/quizzes")} width={1 / 2}>
 				나와 맞는 투자자 찾아보기
 			</Button>
 		</Box>
