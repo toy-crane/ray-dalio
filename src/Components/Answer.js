@@ -4,8 +4,9 @@ import Button from "./Button";
 
 export const Answer = (props) => {
 	const { dispatch } = useContext(PageContext);
-	const { text } = props;
-	const onClick = () => dispatch({ type: "next" });
+	const { text, risk_score, period_score } = props;
+	const onClick = () =>
+		dispatch({ type: "next", payload: { risk_score, period_score } });
 	return (
 		<Button
 			onClick={onClick}

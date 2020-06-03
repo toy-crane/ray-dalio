@@ -4,7 +4,9 @@ import { PageReducer, QUIZ_LIST } from "../Reducer/Page";
 const initialState = {
 	page: 1,
 	pageCount: QUIZ_LIST.length,
-	question: QUIZ_LIST[0]["question"],
+	question: QUIZ_LIST[0]["question"]["text"],
+	risk_score: 0,
+	period_score: 0,
 	answers: QUIZ_LIST[0]["answers"],
 };
 const PageContext = createContext(initialState);

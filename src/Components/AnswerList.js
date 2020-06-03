@@ -13,8 +13,13 @@ export const AnswerList = (props) => {
 	const { answers } = props;
 	return (
 		<StyledButtonList>
-			{answers.map((text, index) => (
-				<Answer key={index} text={text} />
+			{answers.map(({ text, risk_score, period_score }, index) => (
+				<Answer
+					key={index}
+					text={text}
+					risk_score={risk_score}
+					period_score={period_score}
+				/>
 			))}
 		</StyledButtonList>
 	);
