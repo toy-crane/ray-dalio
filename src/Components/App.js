@@ -6,6 +6,7 @@ import emotionReset from "emotion-reset";
 import { Quiz } from "./Quiz";
 import { Home } from "./Home";
 import { Result } from "./Result";
+import { Head } from "./Head";
 import { PageProvider } from "../Context/PageContext";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 
@@ -32,7 +33,6 @@ const theme = {
 		},
 	},
 };
-
 const globalCSS = css`
 	@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 	${emotionReset}
@@ -54,6 +54,7 @@ const Container = styled.section`
 function App() {
 	return (
 		<>
+			<Head />
 			<Global styles={globalCSS} />
 			<PageProvider>
 				<ThemeProvider theme={theme}>
