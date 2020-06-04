@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { PageContext } from "../Context/PageContext";
 import Button from "./Button";
-import { QUIZ_LIST } from "../Reducer/Page";
-import { useHistory } from "react-router-dom";
 
 export const Answer = (props) => {
 	const { dispatch } = useContext(PageContext);
