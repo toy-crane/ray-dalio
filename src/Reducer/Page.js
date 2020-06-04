@@ -187,14 +187,14 @@ export const PageReducer = (state, action) => {
 	switch (action.type) {
 		case "next":
 			const new_page = state.page + 1;
-			console.log(state);
+			const quiz = QUIZ_LIST[new_page - 1];
 			return {
 				...state,
 				page: new_page,
 				risk_score: state.risk_score + action.payload.risk_score,
 				period_score: state.risk_score + action.payload.period_score,
-				question: QUIZ_LIST[new_page - 1]["question"]["text"],
-				answers: QUIZ_LIST[new_page - 1]["answers"],
+				question: quiz ? quiz["question"]["text"] : null,
+				answers: quiz ? quiz["answers"] : null,
 			};
 		default:
 			return;

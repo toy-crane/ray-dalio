@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { PageContext } from "../Context/PageContext";
 
 export const Result = () => {
-    return (
-        <div>
-           결과 페이지입니다. 
-        </div>
-    )
-}
+	const {
+		state: { risk_score, period_score },
+	} = useContext(PageContext);
+	return (
+		<div>
+			결과 페이지입니다. {risk_score} {period_score}
+		</div>
+	);
+};
