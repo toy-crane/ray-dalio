@@ -1,6 +1,6 @@
 export default {
 	fontSizes: [14, 18, 21],
-	space: [5, 10, 20, 30, 100],
+	space: [0, 4, 8, 16, 32, 64, 128, 256],
 	lineHeights: {
 		heading: 1.25,
 		body: 1.5,

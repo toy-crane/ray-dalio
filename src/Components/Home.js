@@ -22,7 +22,7 @@ export const Home = () => {
 				투자자에 가장 가까운지 알아볼까요??
 			</Text>
 			<Image
-				my={1}
+				my={3}
 				src="https://i.pinimg.com/originals/bb/15/28/bb1528ffb469515a407e81438e9eab9d.jpg"
 				sx={{
 					borderRadius: 8,
@@ -30,7 +30,12 @@ export const Home = () => {
 				opacity={0.8}
 			/>
 			<Flex justifyContent="center">
-				<Button onClick={() => history.push("/quizzes")} width={3 / 4}>
+				<Button
+					my={1}
+					onClick={() => history.push("/quizzes")}
+					width={3 / 4}
+					height={75}
+				>
 					나와 맞는 투자자 찾아보기
 				</Button>
 			</Flex>

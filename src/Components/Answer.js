@@ -13,8 +13,7 @@ export const Answer = (props) => {
 			onClick={onClick}
 			width={1}
 			my={1}
-			fontSize={1}
-			height={100}
+			height={75}
 			fontWeight="bold"
 			lineHeight="body"
 			sx={{
