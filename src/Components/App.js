@@ -12,15 +12,7 @@ import GlobalStyles from "../Styles/GlobalStyles";
 import Theme from "../Styles/Theme";
 
 const Container = styled.section`
-	margin: 0 auto;
-	text-align: center;
-	@media (min-width: 480px) {
-		width: 100%;
-		font-size: ${(props) => props.theme.fontSizes[0]};
-	}
-	@media (min-width: 1200px) {
-		width: 80%;
-	}
+	padding: 0 0.5rem;
 `;
 
 function App() {

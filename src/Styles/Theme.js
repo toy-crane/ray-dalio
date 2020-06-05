@@ -1,5 +1,5 @@
 export default {
-	fontSizes: [10, 25, 45, 65],
+	fontSizes: [14, 18, 21],
 	space: [5, 10, 20, 30, 100],
 	lineHeights: {
 		heading: 1.25,
