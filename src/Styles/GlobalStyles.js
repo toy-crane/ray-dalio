@@ -12,4 +12,7 @@ export default css`
 	button:focus {
 		outline: 0;
 	}
+	body {
+		font-family: "Noto Sans KR";
+	}
 `;

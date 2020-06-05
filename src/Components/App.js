@@ -9,43 +9,27 @@ import { Head } from "./Head";
 import { PageProvider } from "../Context/PageContext";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import GlobalStyles from "../Styles/GlobalStyles";
-
-const theme = {
-	fontSizes: [10, 25, 45, 65],
-	space: [5, 10, 20, 30, 100],
-	lineHeights: {
-		heading: 1.25,
-		body: 1.5,
-	},
-	colors: {
-		text: "#000",
-		background: "#fff",
-		primary: "#2F3438",
-		secondary: "#35C5F0",
-		grey: "#EAEBEF",
-		darkgrey: "#525B61",
-	},
-	buttons: {
-		primary: {
-			color: "white",
-			bg: "primary",
-			boxShadow: "0 4px 15px 0 rgba(47,52,56,.15)",
-		},
-	},
-};
+import Theme from "../Styles/Theme";
 
 const Container = styled.section`
-	max-width: 880px;
 	margin: 0 auto;
+	text-align: center;
+	@media (min-width: 480px) {
+		width: 100%;
+		font-size: ${(props) => props.theme.fontSizes[0]};
+	}
+	@media (min-width: 1200px) {
+		width: 80%;
+	}
 `;
 
 function App() {
 	return (
 		<>
-			<Head />
-			<Global styles={GlobalStyles} />
 			<PageProvider>
-				<ThemeProvider theme={theme}>
+				<ThemeProvider theme={Theme}>
+					<Head />
+					<Global styles={GlobalStyles} />
 					<BrowserRouter>
 						<Container>
 							<Switch>
