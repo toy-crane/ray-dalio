@@ -193,7 +193,7 @@ export const PageReducer = (state, action) => {
 				page: new_page,
 				risk_score: state.risk_score + action.payload.risk_score,
 				period_score: state.risk_score + action.payload.period_score,
-				question: quiz ? quiz["question"]["text"] : null,
+				question: quiz ? quiz["question"] : null,
 				answers: quiz ? quiz["answers"] : null,
 			};
 		default:

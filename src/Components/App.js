@@ -1,14 +1,14 @@
 import React from "react";
-import { Global, css } from "@emotion/core";
+import { Global } from "@emotion/core";
 import { ThemeProvider } from "emotion-theming";
 import styled from "@emotion/styled";
-import emotionReset from "emotion-reset";
 import { Quiz } from "./Quiz";
 import { Home } from "./Home";
 import { Result } from "./Result";
 import { Head } from "./Head";
 import { PageProvider } from "../Context/PageContext";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import GlobalStyles from "../Styles/GlobalStyles";
 
 const theme = {
 	fontSizes: [10, 25, 45, 65],
@@ -33,18 +33,6 @@ const theme = {
 		},
 	},
 };
-const globalCSS = css`
-	@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
-	${emotionReset}
-	*, *::after, *::before {
-		box-sizing: border-box;
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-	}
-	button:focus {
-		outline: 0;
-	}
-`;
 
 const Container = styled.section`
 	max-width: 880px;
@@ -55,7 +43,7 @@ function App() {
 	return (
 		<>
 			<Head />
-			<Global styles={globalCSS} />
+			<Global styles={GlobalStyles} />
 			<PageProvider>
 				<ThemeProvider theme={theme}>
 					<BrowserRouter>
