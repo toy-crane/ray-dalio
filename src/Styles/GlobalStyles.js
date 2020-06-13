@@ -15,14 +15,5 @@ export default css`
 	}
 	body {
 		font-family: "Noto Sans KR";
-		${sm} {
-			width: 100%;
-			font-size: 18px;
-		}
-		${md} {
-			margin: 0 auto;
-			max-width: 600px;
-			font-size: 18px;
-		}
 	}
 `;

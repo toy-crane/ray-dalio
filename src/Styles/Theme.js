@@ -1,15 +1,15 @@
 export default {
-	fontSizes: [14, 18, 21],
+	fontSizes: [12, 16, 14, 18, 28, 32],
 	space: [0, 4, 8, 16, 32, 64, 128, 256],
 	lineHeights: {
 		heading: 1.25,
-		body: 1.5,
+		body: "30px",
 	},
 	colors: {
 		text: "#000",
 		background: "#fff",
-		primary: "#2F3438",
-		secondary: "#35C5F0",
+		primary: "#293053",
+		secondary: "#5F5F5F",
 		grey: "#EAEBEF",
 		darkgrey: "#525B61",
 	},
