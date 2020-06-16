@@ -1,13 +1,11 @@
 import React, { createContext, useReducer } from "react";
-import { PageReducer, QUIZ_LIST } from "../Reducer/Page";
+import { PageReducer } from "../Reducer/Page";
 
 const initialState = {
 	page: 1,
-	pageCount: QUIZ_LIST.length,
-	question: QUIZ_LIST[0]["question"],
 	risk_score: 0,
 	period_score: 0,
-	answers: QUIZ_LIST[0]["answers"],
+	character_codes: [],
 };
 const PageContext = createContext(initialState);
 

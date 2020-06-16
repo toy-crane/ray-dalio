@@ -1,11 +1,7 @@
-import React, { useContext } from "react";
-import { PageContext } from "../Context/PageContext";
+import React from "react";
 import { Flex, Box } from "rebass";
 
-export const QuizHeader = () => {
-	const {
-		state: { page, pageCount },
-	} = useContext(PageContext);
+export const QuizHeader = ({ page, pageCount }) => {
 	return (
 		<Flex>
 			<Box
