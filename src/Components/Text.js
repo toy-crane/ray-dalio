@@ -6,6 +6,10 @@ const CustomStyled = {
 	lineHeight: "body",
 };
 
-export default ({ children }) => {
-	return <Text sx={CustomStyled}>{children}</Text>;
+export default (props) => {
+	return (
+		<Text {...props} sx={CustomStyled}>
+			{props.children}
+		</Text>
+	);
 };

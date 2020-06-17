@@ -1,6 +1,6 @@
 export default {
 	fontSizes: [16, 18, 32],
-	space: [0, 4, 8, 16, 32, 64, 128, 256],
+	space: [10, 80],
 	lineHeights: {
 		heading: "1.25em",
 		question: "1.55em",
