@@ -4,6 +4,7 @@ export default {
 	lineHeights: {
 		heading: "1.25em",
 		question: "1.55em",
+		button: "1.5em",
 		body: "1.66em",
 	},
 	colors: {

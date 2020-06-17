@@ -18,19 +18,7 @@ export const Answer = (props) => {
 		}
 	};
 	return (
-		<Button
-			onClick={onClick}
-			width={1}
-			my={1}
-			height={75}
-			fontWeight="bold"
-			lineHeight="body"
-			sx={{
-				":hover": {
-					bg: "secondary",
-				},
-			}}
-		>
+		<Button onClick={onClick} width={1} mb="10px" height={80}>
 			{text}
 		</Button>
 	);

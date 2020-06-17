@@ -3,9 +3,11 @@ import { Button } from "rebass";
 export default (props) => (
 	<Button
 		{...props}
-		fontSize={1}
+		fontSize={0}
 		fontWeight="bold"
-		lineHeight="body"
+		lineHeight="button"
+		px="20px"
+		py="16px"
 		sx={{
 			":hover": {
 				bg: "grey",
