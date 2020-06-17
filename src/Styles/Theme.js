@@ -1,9 +1,9 @@
 export default {
-	fontSizes: [12, 16, 14, 18, 28, 32],
+	fontSizes: [16, 18, 32],
 	space: [0, 4, 8, 16, 32, 64, 128, 256],
 	lineHeights: {
-		heading: 1.25,
-		body: "30px",
+		heading: "1.25em",
+		body: "1.66em",
 	},
 	colors: {
 		text: "#000",
