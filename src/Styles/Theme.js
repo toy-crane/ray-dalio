@@ -8,12 +8,10 @@ export default {
 		body: "1.66em",
 	},
 	colors: {
-		text: "#000",
 		background: "#FEFEFE",
 		primary: "#7362FF",
 		secondary: "#293053",
-		grey: "#DFDFDF",
-		darkgrey: "#525B61",
+		grey: "#A9A0EF",
 	},
 	buttons: {
 		primary: {
