@@ -3,7 +3,6 @@ import { PageContext } from "../Context/PageContext";
 import { QuizHeader } from "./QuizHeader";
 import { Question } from "./Question";
 import { AnswerList } from "./AnswerList";
-import { useHistory } from "react-router-dom";
 import { QUIZ_LIST } from "../Reducer/Page";
 
 export const Quiz = () => {
