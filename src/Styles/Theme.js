@@ -3,6 +3,7 @@ export default {
 	space: [0, 4, 8, 16, 32, 64, 128, 256],
 	lineHeights: {
 		heading: "1.25em",
+		question: "1.55em",
 		body: "1.66em",
 	},
 	colors: {

@@ -1,11 +1,14 @@
 import React from "react";
 import { Box } from "rebass";
 
+const CustomStyled = {
+	width: "100%",
+	fontSize: [1],
+	py: "24px",
+	fontWeight: "bold",
+	lineHeight: "question",
+};
 
 export const Question = ({ question }) => {
-	return (
-		<Box width={1} fontSize={2} py={4} fontWeight="bold" lineHeight="body">
-			{question}
-		</Box>
-	);
+	return <Box sx={CustomStyled}>{question}</Box>;
 };
