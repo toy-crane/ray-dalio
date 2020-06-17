@@ -1,10 +1,12 @@
 import React, { useContext } from "react";
 import { PageContext } from "../Context/PageContext";
-import { Image, Flex, Link } from "rebass";
+import { Image, Flex, Link, Box } from "rebass";
 import Header from "./Header";
 import Text from "./Text";
 import Button from "./Button";
 import { useHistory } from "react-router";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+
 const SPECIAL_CHARACTER_CODES = [
 	"G",
 	"D",
@@ -95,9 +97,23 @@ export const Result = () => {
 				</Button>
 			</Flex>
 			<Flex justifyContent="center" my={0}>
-				<Link variant="nav" href="https://rebassjs.org" mx="8px">
-					<Image src={`icons/url.png`} width="48px" height="48px" />
-				</Link>
+				<CopyToClipboard text="www.lazi.io/investor">
+					<Link
+						variant="nav"
+						onClick={() => alert("URL이 복사되었습니다.")}
+						mx="8px"
+						sx={{
+							cursor: "pointer",
+						}}
+					>
+						<Image
+							src={`icons/url.png`}
+							width="48px"
+							height="48px"
+						/>
+					</Link>
+				</CopyToClipboard>
+
 				<Link variant="nav" href="https://rebassjs.org" mx="8px">
 					<Image
 						src={`icons/facebook.png`}
