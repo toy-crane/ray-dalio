@@ -6,6 +6,7 @@ const initialState = {
 	risk_score: 0,
 	period_score: 0,
 	character_codes: [],
+	character: null,
 };
 const PageContext = createContext(initialState);
 

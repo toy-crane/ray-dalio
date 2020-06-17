@@ -227,6 +227,57 @@ export const QUIZ_LIST = [
 	},
 ];
 
+const SPECIAL_CHARACTER_CODES = [
+	"G",
+	"D",
+	"E",
+	"S",
+	"P",
+	"T",
+	"J",
+	"B",
+	"K",
+	"C",
+];
+
+const getSpecialCharacter = (character_codes) => {
+	let characters = [];
+	const character_codes_str = character_codes.join("");
+	for (const code of SPECIAL_CHARACTER_CODES) {
+		const count = (character_codes_str.match(new RegExp(code, "g")) || [])
+			.length;
+		if (count >= 1) {
+			if (count === 2 && code === "G") {
+				characters.push(code);
+			} else {
+				characters.push(code);
+			}
+		}
+	}
+	return characters[Math.floor(Math.random() * characters.length)];
+};
+
+const findCharacter = (risk_score, period_score, character_codes) => {
+	const specialCharacter = getSpecialCharacter(character_codes);
+	if (specialCharacter) {
+		return specialCharacter;
+	} else {
+		if (risk_score > 23) {
+			if (period_score > 7) {
+				return "SON";
+			} else {
+				return "JESSI";
+			}
+		} else {
+			if (period_score > 7) {
+				return "WARREN";
+			} else {
+				return "RAY";
+			}
+		}
+	}
+};
+
 export const PageReducer = (state, action) => {
 	switch (action.type) {
 		case "next":
@@ -238,13 +289,41 @@ export const PageReducer = (state, action) => {
 				risk_score: state.risk_score + parseInt(action.payload.code[1]),
 				period_score:
 					state.risk_score + parseInt(action.payload.code[2]),
-				character_codes:
-					action.payload.code[0] === "A"
-						? [...state.character_codes]
-						: [...state.character_codes, action.payload.code[0]],
+				character_codes: [
+					...state.character_codes,
+					action.payload.code[0],
+				],
 				question: quiz ? quiz["question"] : null,
 				answers: quiz ? quiz["answers"] : null,
 			};
+		case "getCharacter":
+			const risk_score =
+				state.risk_score + parseInt(action.payload.code[1]);
+			const period_score =
+				state.risk_score + parseInt(action.payload.code[2]);
+			const character_codes = [
+				...state.character_codes,
+				action.payload[0],
+			];
+			const character = findCharacter(
+				risk_score,
+				period_score,
+				character_codes
+			);
+			localStorage.setItem("character", JSON.stringify(character));
+			localStorage.setItem("risk_score", JSON.stringify(risk_score));
+			localStorage.setItem("period_score", JSON.stringify(period_score));
+			return {
+				...state,
+				risk_score,
+				period_score,
+				character,
+				page: null,
+				character_codes: null,
+				question: null,
+				answers: null,
+			};
+
 		default:
 			return;
 	}

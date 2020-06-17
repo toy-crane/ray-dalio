@@ -12,8 +12,10 @@ export const Answer = (props) => {
 	const { text, code } = props;
 	let history = useHistory();
 	const onClick = () => {
-		dispatch({ type: "next", payload: { code } });
-		if (page === QUIZ_LIST.length) {
+		if (page < QUIZ_LIST.length) {
+			dispatch({ type: "next", payload: { code } });
+		} else {
+			dispatch({ type: "getCharacter", payload: { code } });
 			history.push("/result");
 		}
 	};

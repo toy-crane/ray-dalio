@@ -7,63 +7,9 @@ import Button from "./Button";
 import { useHistory } from "react-router";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-const SPECIAL_CHARACTER_CODES = [
-	"G",
-	"D",
-	"E",
-	"S",
-	"P",
-	"T",
-	"J",
-	"B",
-	"K",
-	"C",
-];
-
-const getSpecialCharacter = (character_codes) => {
-	let characters = [];
-	const character_codes_str = character_codes.join("");
-	for (const code of SPECIAL_CHARACTER_CODES) {
-		const count = (character_codes_str.match(new RegExp(code, "g")) || [])
-			.length;
-		if (count > 1) {
-			if (count === 2 && code === "G") {
-				characters.push(code);
-			} else {
-				characters.push(code);
-			}
-		}
-	}
-	return characters[Math.floor(Math.random() * characters.length)];
-};
-
-const findCharacter = (risk_score, period_score, character_codes) => {
-	const specialCharacter = getSpecialCharacter(character_codes);
-	if (specialCharacter) {
-		return specialCharacter;
-	} else {
-		if (risk_score > 23) {
-			if (period_score > 7) {
-				return "SON";
-			} else {
-				return "JESSI";
-			}
-		} else {
-			if (period_score > 7) {
-				return "WARREN";
-			} else {
-				return "RAY";
-			}
-		}
-	}
-};
-
 export const Result = () => {
 	let history = useHistory();
-	const {
-		state: { risk_score, period_score, character_codes },
-	} = useContext(PageContext);
-	const character = findCharacter(risk_score, period_score, character_codes);
+	const character = JSON.parse(localStorage.getItem("character"));
 	return (
 		<>
 			<Header>나의 투자 성향과 비슷한 투자자는?</Header>
