@@ -13,6 +13,6 @@ const customStyled = {
 	color: "secondary",
 };
 
-export const HomeHeader = ({ children }) => {
+export default ({ children }) => {
 	return <Heading sx={customStyled}>{children}</Heading>;
 };

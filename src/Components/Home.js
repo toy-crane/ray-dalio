@@ -2,14 +2,14 @@ import React from "react";
 import Button from "./Button";
 import { useHistory } from "react-router-dom";
 import { Box, Image, Flex } from "rebass";
-import { HomeHeader } from "./HomeHeader";
+import Header from "./Header";
 import Text from "./Text";
 
 export const Home = () => {
 	let history = useHistory();
 	return (
 		<Box my={3}>
-			<HomeHeader>나의 투자 성향과 비슷한 투자자 찾기</HomeHeader>
+			<Header>나의 투자 성향과 비슷한 투자자 찾기</Header>
 			<Image
 				my={3}
 				src="main_pc_intro.png"
