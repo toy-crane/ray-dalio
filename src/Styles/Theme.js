@@ -7,10 +7,10 @@ export default {
 	},
 	colors: {
 		text: "#000",
-		background: "#fff",
-		primary: "#293053",
-		secondary: "#5F5F5F",
-		grey: "#EAEBEF",
+		background: "#FEFEFE",
+		primary: "#7362FF",
+		secondary: "#293053",
+		grey: "#DFDFDF",
 		darkgrey: "#525B61",
 	},
 	buttons: {

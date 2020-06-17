@@ -8,7 +8,8 @@ export default (props) => (
 		lineHeight="body"
 		sx={{
 			":hover": {
-				bg: "secondary",
+				bg: "grey",
+				opacity: "0.5",
 			},
 		}}
 	>
