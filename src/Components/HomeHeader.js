@@ -10,6 +10,7 @@ const customStyled = {
 	textAlign: "center",
 	lineHeight: "heading",
 	fontSize: [2],
+	color: "secondary",
 };
 
 export const HomeHeader = ({ children }) => {
