@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
-import { PageContext } from "../Context/PageContext";
-import { Image, Flex, Link, Box } from "rebass";
+import React from "react";
+import { Image, Flex, Link } from "rebass";
 import Header from "./Header";
 import Text from "./Text";
 import Button from "./Button";
@@ -34,7 +33,9 @@ export const Result = () => {
 			</Flex>
 			<Flex justifyContent="center">
 				<Button
-					onClick={() => history.push("/")}
+					onClick={() => {
+						history.push("/");
+					}}
 					width="300px"
 					height="60px"
 					m={0}
