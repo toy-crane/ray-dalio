@@ -1,3 +1,5 @@
+import { initialState } from "../Context/PageContext";
+
 export const QUIZ_LIST = [
 	{
 		id: 1,
@@ -323,7 +325,9 @@ export const PageReducer = (state, action) => {
 				question: null,
 				answers: null,
 			};
-
+		case "reset":
+			localStorage.clear();
+			return initialState;
 		default:
 			return;
 	}

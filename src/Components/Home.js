@@ -4,9 +4,16 @@ import { useHistory } from "react-router-dom";
 import { Box, Image, Flex } from "rebass";
 import Header from "./Header";
 import Text from "./Text";
+import { useEffect } from "react";
+import { useContext } from "react";
+import { PageContext } from "../Context/PageContext";
 
 export const Home = () => {
 	let history = useHistory();
+	const { dispatch } = useContext(PageContext);
+	useEffect(() => {
+		dispatch({ type: "reset" });
+	});
 	return (
 		<Box my={3}>
 			<Header mb={1} my={2}>

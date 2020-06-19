@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import { PageReducer } from "../Reducer/Page";
 
-const initialState = {
+export const initialState = {
 	page: 1,
 	risk_score: 0,
 	period_score: 0,
