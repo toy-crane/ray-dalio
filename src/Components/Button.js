@@ -1,5 +1,14 @@
 import React from "react";
 import { Button } from "rebass";
+
+const customStyled = {
+	"@media not all and (pointer: coarse)": {
+		":hover": {
+			bg: "grey",
+		},
+	},
+};
+
 export default (props) => (
 	<Button
 		{...props}
@@ -8,12 +17,7 @@ export default (props) => (
 		lineHeight="button"
 		px="20px"
 		py="16px"
-		sx={{
-			":hover": {
-				bg: "grey",
-				opacity: "0.5",
-			},
-		}}
+		sx={customStyled}
 	>
 		{props.children}
 	</Button>
