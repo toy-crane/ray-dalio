@@ -9,16 +9,16 @@ import { Head } from "./Head";
 import { PageProvider } from "../Context/PageContext";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import GlobalStyles from "../Styles/GlobalStyles";
-import { sm, md } from "../Styles/BreakPoints";
+import { mobile, web } from "../Styles/BreakPoints";
 import Theme from "../Styles/Theme";
 
 const Container = styled.section`
 	padding: 0 0.5rem;
-	${sm} {
+	${mobile} {
 		min-width: 320px;
 		width: 100%;
 	}
-	${md} {
+	${web} {
 		margin: 0 auto;
 		padding: 0 212px;
 		max-width: 1024px;
