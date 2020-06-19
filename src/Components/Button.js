@@ -7,6 +7,9 @@ const customStyled = {
 			bg: "grey",
 		},
 	},
+	":active": {
+		bg: "grey",
+	},
 };
 
 export default (props) => (
