@@ -15,11 +15,13 @@ import Theme from "../Styles/Theme";
 const Container = styled.section`
 	padding: 0 0.5rem;
 	${mobile} {
+		margin-top: 40px;
 		min-width: 320px;
 		width: 100%;
 	}
 	${web} {
 		margin: 0 auto;
+		margin-top: 80px;
 		padding: 0 212px;
 		max-width: 1024px;
 	}

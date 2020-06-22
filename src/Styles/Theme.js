@@ -1,6 +1,7 @@
 export default {
-	fontSizes: [16, 18, 32],
-	space: [10, 80],
+	breakpoints: ["600px", "2000px", "3000px"],
+	fontSizes: [14, 16, 18, 20, 32],
+	space: [0, 10, 20, 30, 40, 50, 80],
 	lineHeights: {
 		heading: "1.25em",
 		question: "1.55em",

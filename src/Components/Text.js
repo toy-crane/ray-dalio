@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "rebass";
 
 const CustomStyled = {
-	fontSize: [1],
+	fontSize: [0, 2],
 	lineHeight: "body",
 };
 

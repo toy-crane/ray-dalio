@@ -2,13 +2,12 @@ import React from "react";
 import { Heading } from "rebass";
 
 const customStyled = {
-	paddingTop: "80px",
-	paddingBottom: "10px",
+	padding: "10px",
 	color: "primary",
 	fontWeight: "bold",
 	textAlign: "center",
 	lineHeight: "heading",
-	fontSize: [2],
+	fontSize: [3, 4],
 };
 
 export default ({ children }) => {

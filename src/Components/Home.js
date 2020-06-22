@@ -15,18 +15,15 @@ export const Home = () => {
 		dispatch({ type: "reset" });
 	});
 	return (
-		<Box my={3}>
-			<Header mb={1} my={2}>
-				나의 투자 성향과 비슷한 투자자 찾기
-			</Header>
+		<Box>
+			<Header mb={[1, 2]}>나의 투자 성향과 비슷한 투자자 찾기</Header>
 			<Image
-				my={1}
 				src="main_pc_intro.png"
 				sx={{
 					borderRadius: 8,
 				}}
 			/>
-			<Text my={0}>
+			<Text my={[3, 1]} p={[1, 2]}>
 				워렌 버핏, 레이 달리오, 손정의 등 우리 주변에는 각자만의 색깔로
 				투자를 하는 유명한 투자자들이 있습니다. 이 중에 당신은 어떤
 				투자자에 가장 가까운지 알아볼까요??
@@ -34,7 +31,7 @@ export const Home = () => {
 			<Flex justifyContent="center">
 				<Button
 					onClick={() => history.push("/quizzes")}
-					width="300px"
+					width={[1, "300px"]}
 					height="60px"
 					m={0}
 				>

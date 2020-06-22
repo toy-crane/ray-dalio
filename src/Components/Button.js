@@ -15,11 +15,10 @@ const customStyled = {
 export default (props) => (
 	<Button
 		{...props}
-		fontSize={0}
+		fontSize={1}
 		fontWeight="bold"
 		lineHeight="button"
-		px="20px"
-		py="16px"
+		padding={1}
 		sx={customStyled}
 	>
 		{props.children}
