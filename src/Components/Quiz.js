@@ -14,7 +14,7 @@ export const Quiz = () => {
 	return (
 		<div>
 			<QuizHeader page={page} pageCount={pageCount} />
-			<Question question={question}></Question>
+			<Question my={2} question={question}></Question>
 			<AnswerList answers={answers}></AnswerList>
 		</div>
 	);

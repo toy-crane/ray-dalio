@@ -2,9 +2,8 @@ import React from "react";
 import { Flex, Box } from "rebass";
 
 const CustomStyled = {
-	mt: "80px",
-	mb: "20px",
-	fontSize: [1],
+	padding: [1],
+	fontSize: [1, 3],
 	fontWeight: "bold",
 	color: "secondary",
 	py: "5px",

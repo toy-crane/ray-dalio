@@ -20,7 +20,7 @@ export const Answer = (props) => {
 		}
 	};
 	return (
-		<Button onClick={onClick} width={1} mb="10px" height={80}>
+		<Button onClick={onClick} width={1} mb={1} height={80}>
 			{text}
 		</Button>
 	);
