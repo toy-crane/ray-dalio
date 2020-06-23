@@ -1,12 +1,20 @@
 import React from "react";
-import { Image, Flex, Link } from "rebass";
+import { Image, Flex } from "rebass";
 import Header from "./Header";
 import Text from "./Text";
 import Button from "./Button";
 import { useHistory } from "react-router";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ShareButtonList } from "./ShareButtonList";
 import { ScoreBarList } from "./ScoreBarList";
+import { HashTagText } from "./HashTagText";
+
+const sampleResult =
+	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
+주인이었을 듯 규칙, 질서 엄청 중요하게 생각해서 사회에 반항해본 \
+적 없는 천상 양반 남한테 이래라저래라 잔소리 잘함. 근데 본인도 \
+흠잡을 곳 없이 빠릿하게 행동해서 남들이 딱히 뭐라고도 못함 \
+이웃집 양반이 농사 안된다고 고민을 털어놔도 딱히 공감은 못 \
+하지만 어설프게 위로는 함";
 
 export const Result = () => {
 	let history = useHistory();
@@ -19,20 +27,11 @@ export const Result = () => {
 				sx={{ margin: "10px auto" }}
 			/>
 			<ScoreBarList />
-			<Text px="50px" my={0}>
-				빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집
-				주인이었을 듯 규칙, 질서 엄청 중요하게 생각해서 사회에 반항해본
-				적 없는 천상 양반 남한테 이래라저래라 잔소리 잘함. 근데 본인도
-				흠잡을 곳 없이 빠릿하게 행동해서 남들이 딱히 뭐라고도 못함
-				이웃집 양반이 농사 안된다고 고민을 털어놔도 딱히 공감은 못
-				하지만 어설프게 위로는 함
+			<HashTagText mb={1} />
+			<Text px="50px" mb={1}>
+				{sampleResult}
 			</Text>
-			<Flex
-				justifyContent="center"
-				alignContent="center"
-				mt="70px"
-				mb={0}
-			>
+			<Flex justifyContent="center" alignContent="center" mb={0}>
 				<Text fontSize={0} color="secondary" fontWeight="bold">
 					나의 투자 성향 공유하기
 				</Text>
