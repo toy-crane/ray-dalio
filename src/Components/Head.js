@@ -22,6 +22,7 @@ export const Head = () => {
 				sizes="16x16"
 				href="favicons/favicon-16x16.png"
 			/>
+			<script src="static/kakao.min.js"></script>
 		</Helmet>
 	);
 };
