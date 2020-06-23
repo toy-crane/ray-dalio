@@ -8,6 +8,7 @@ import { ShareButtonList } from "./ShareButtonList";
 import { ScoreBarList } from "./ScoreBarList";
 import { HashTagText } from "./HashTagText";
 import { BodyText } from "./BodyText";
+import { Recommendation } from "./Recommendation";
 
 const sampleResult =
 	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
@@ -36,7 +37,8 @@ export const Result = () => {
 			/>
 			<ScoreBarList />
 			<HashTagText mb={1} />
-			<BodyText mb={1} text={sampleResult} />
+			<BodyText mb={3} text={sampleResult} />
+			<Recommendation mb={2} />
 			<Flex justifyContent="center" alignContent="center" mb={0}>
 				<Text fontSize={0} color="secondary" fontWeight="bold">
 					나의 투자 성향 공유하기
