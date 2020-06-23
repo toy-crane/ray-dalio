@@ -13,6 +13,7 @@ export default {
 		primary: "#7362FF",
 		secondary: "#293053",
 		grey: "#A9A0EF",
+		deepGray: "#BABABA",
 	},
 	buttons: {
 		primary: {

@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"@bit/nexxtway.react-rainbow.progress-bar": "^1.10.0",
 		"@rebass/preset": "^4.0.5",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.3.2",
@@ -21,7 +22,8 @@
 		"react-share": "^4.2.0",
 		"react-share-kakao": "0.0.5",
 		"react-social-kr": "^1.1.9",
-		"rebass": "^4.0.7"
+		"rebass": "^4.0.7",
+		"semantic-ui-react": "^0.88.2"
 	},
 	"scripts": {
 		"start": "react-scripts start",

@@ -6,6 +6,7 @@ import Button from "./Button";
 import { useHistory } from "react-router";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { ShareButtonList } from "./ShareButtonList";
+import { ScoreBarList } from "./ScoreBarList";
 
 export const Result = () => {
 	let history = useHistory();
@@ -13,7 +14,11 @@ export const Result = () => {
 	return (
 		<>
 			<Header>나의 투자 성향과 비슷한 투자자는?</Header>
-			<Image my={0} src={`characters/${character}.png`} height="350px" />
+			<Image
+				src={`characters/${character}.png`}
+				sx={{ margin: "10px auto" }}
+			/>
+			<ScoreBarList />
 			<Text px="50px" my={0}>
 				빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집
 				주인이었을 듯 규칙, 질서 엄청 중요하게 생각해서 사회에 반항해본
