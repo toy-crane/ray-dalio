@@ -7,6 +7,7 @@ import { useHistory } from "react-router";
 import { ShareButtonList } from "./ShareButtonList";
 import { ScoreBarList } from "./ScoreBarList";
 import { HashTagText } from "./HashTagText";
+import { BodyText } from "./BodyText";
 
 const sampleResult =
 	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
@@ -14,7 +15,14 @@ const sampleResult =
 적 없는 천상 양반 남한테 이래라저래라 잔소리 잘함. 근데 본인도 \
 흠잡을 곳 없이 빠릿하게 행동해서 남들이 딱히 뭐라고도 못함 \
 이웃집 양반이 농사 안된다고 고민을 털어놔도 딱히 공감은 못 \
-하지만 어설프게 위로는 함";
+하지만 어설프게 위로는 함 \
+빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
+주인이었을 듯 규칙, 질서 엄청 중요하게 생각해서 사회에 반항해본 \
+적 없는 천상 양반 남한테 이래라저래라 잔소리 잘함. 근데 본인도 \
+흠잡을 곳 없이 빠릿하게 행동해서 남들이 딱히 뭐라고도 못함 \
+이웃집 양반이 농사 안된다고 고민을 털어놔도 딱히 공감은 못 \
+하지만 어설프게 위로는 함 \
+";
 
 export const Result = () => {
 	let history = useHistory();
@@ -28,9 +36,7 @@ export const Result = () => {
 			/>
 			<ScoreBarList />
 			<HashTagText mb={1} />
-			<Text px="50px" mb={1}>
-				{sampleResult}
-			</Text>
+			<BodyText mb={1} text={sampleResult} />
 			<Flex justifyContent="center" alignContent="center" mb={0}>
 				<Text fontSize={0} color="secondary" fontWeight="bold">
 					나의 투자 성향 공유하기
