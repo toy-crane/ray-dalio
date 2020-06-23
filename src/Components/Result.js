@@ -5,6 +5,7 @@ import Text from "./Text";
 import Button from "./Button";
 import { useHistory } from "react-router";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { ShareButtonList } from "./ShareButtonList";
 
 export const Result = () => {
 	let history = useHistory();
@@ -31,6 +32,7 @@ export const Result = () => {
 					나의 투자 성향 공유하기
 				</Text>
 			</Flex>
+			<ShareButtonList />
 			<Flex justifyContent="center">
 				<Button
 					onClick={() => {
@@ -42,42 +44,6 @@ export const Result = () => {
 				>
 					투자 성향 테스트 다시하기
 				</Button>
-			</Flex>
-			<Flex justifyContent="center" my={0}>
-				<CopyToClipboard text="www.lazi.io/investor">
-					<Link
-						variant="nav"
-						onClick={() => alert("URL이 복사되었습니다.")}
-						mx="8px"
-						sx={{
-							cursor: "pointer",
-						}}
-					>
-						<Image
-							src={`icons/url.png`}
-							width="48px"
-							height="48px"
-						/>
-					</Link>
-				</CopyToClipboard>
-
-				<Link variant="nav" href="https://rebassjs.org" mx="8px">
-					<Image
-						src={`icons/facebook.png`}
-						width="48px"
-						height="48px"
-					/>
-				</Link>
-				<Link variant="nav" href="https://rebassjs.org" mx="8px">
-					<Image
-						src={`icons/twitter.png`}
-						width="48px"
-						height="48px"
-					/>
-				</Link>
-				<Link variant="nav" href="https://rebassjs.org" mx="8px">
-					<Image src={`icons/kakao.png`} width="48px" height="48px" />
-				</Link>
 			</Flex>
 			<Flex justifyContent="center" my="20px">
 				<iframe
