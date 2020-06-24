@@ -1,15 +1,14 @@
 import React from "react";
 import { Image, Flex } from "rebass";
 import Header from "./Header";
-import Text from "./Text";
 import Button from "./Button";
 import { useHistory } from "react-router";
-import { ShareButtonList } from "./ShareButtonList";
 import { ScoreBarList } from "./ScoreBarList";
 import { HashTagText } from "./HashTagText";
 import { BodyText } from "./BodyText";
 import { Recommendation } from "./Recommendation";
 import { ShareSection } from "./ShareSection";
+import { Advertisement } from "./Advertisement";
 
 const sampleResult =
 	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
@@ -53,6 +52,7 @@ export const Result = () => {
 					투자 성향 테스트 다시하기
 				</Button>
 			</Flex>
+			<Advertisement />
 			<Flex justifyContent="center" my="20px">
 				<iframe
 					title="facebook"
@@ -61,8 +61,7 @@ export const Result = () => {
 					height="70"
 					style={{ border: "none", overflow: "hidden" }}
 					scrolling="no"
-					frameborder="0"
-					allowTransparency="true"
+					frameBorder="0"
 					allow="encrypted-media"
 				></iframe>
 			</Flex>

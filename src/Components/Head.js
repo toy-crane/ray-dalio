@@ -23,6 +23,7 @@ export const Head = () => {
 				href="favicons/favicon-16x16.png"
 			/>
 			<script src="static/kakao.min.js"></script>
+			<script src="https://ads-partners.coupang.com/g.js"></script>
 		</Helmet>
 	);
 };
