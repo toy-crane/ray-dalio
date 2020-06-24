@@ -7,7 +7,7 @@ const customStyled = {
 	fontWeight: "bold",
 	textAlign: "center",
 	lineHeight: "heading",
-	fontSize: [4, 5],
+	fontSize: [5, 6],
 };
 
 export default ({ children }) => {

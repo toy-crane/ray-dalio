@@ -4,7 +4,7 @@ import { Flex } from "rebass";
 
 export const BodyText = (props) => {
 	return (
-		<Flex {...props} px={5} py={1}>
+		<Flex {...props} px={[1, 5]} py={1}>
 			<Text>{props.text}</Text>
 		</Flex>
 	);
