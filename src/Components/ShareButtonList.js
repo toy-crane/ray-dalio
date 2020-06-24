@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Image, Flex, Link, Button } from "rebass";
+import { Image, Flex, Link, Box } from "rebass";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
 
@@ -19,32 +19,52 @@ export const ShareButtonList = () => {
 	}
 	return (
 		<Flex justifyContent="center" my={0}>
-			<CopyToClipboard text={HOME_URL}>
+			<Box mx="8px">
+				<CopyToClipboard text={HOME_URL}>
+					<Link
+						variant="nav"
+						onClick={() => alert("URL이 복사되었습니다.")}
+						sx={{
+							cursor: "pointer",
+						}}
+					>
+						<Image
+							src={`icons/url.png`}
+							width="48px"
+							height="48px"
+						/>
+					</Link>
+				</CopyToClipboard>
+			</Box>
+			<Box mx="8px">
+				<FacebookShareButton url={HOME_URL} quote={SHARE_TITLE}>
+					<Image
+						src={`icons/facebook.png`}
+						width="48px"
+						height="48px"
+					/>
+				</FacebookShareButton>
+			</Box>
+			<Box mx="8px">
+				<TwitterShareButton url={HOME_URL} title={SHARE_TITLE}>
+					<Image
+						src={`icons/twitter.png`}
+						width="48px"
+						height="48px"
+					/>
+				</TwitterShareButton>
+			</Box>
+			<Box mx="8px">
 				<Link
 					variant="nav"
-					onClick={() => alert("URL이 복사되었습니다.")}
+					onClick={sendLink}
 					sx={{
 						cursor: "pointer",
 					}}
 				>
-					<Image src={`icons/url.png`} width="48px" height="48px" />
+					<Image src={`icons/kakao.png`} width="48px" height="48px" />
 				</Link>
-			</CopyToClipboard>
-			<FacebookShareButton url={HOME_URL} quote={SHARE_TITLE}>
-				<Image src={`icons/facebook.png`} width="48px" height="48px" />
-			</FacebookShareButton>
-			<TwitterShareButton url={HOME_URL} title={SHARE_TITLE}>
-				<Image src={`icons/twitter.png`} width="48px" height="48px" />
-			</TwitterShareButton>
-			<Link
-				variant="nav"
-				onClick={sendLink}
-				sx={{
-					cursor: "pointer",
-				}}
-			>
-				<Image src={`icons/kakao.png`} width="48px" height="48px" />
-			</Link>
+			</Box>
 		</Flex>
 	);
 };

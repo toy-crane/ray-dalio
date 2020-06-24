@@ -8,7 +8,7 @@ export const ScoreBarList = () => {
 		<>
 			<Box px={5} my={1}>
 				<Flex my={2}>
-					<Text mx={2} width="30%" fontWeight="bold">
+					<Text mx={2} width="120px" fontWeight="bold">
 						위험 성향
 					</Text>
 					<Box width="65%" mx={1}>
