@@ -1,8 +1,7 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { PageContext } from "../Context/PageContext";
 import Button from "./Button";
 import { QUIZ_LIST } from "../Reducer/Page";
-import { useHistory } from "react-router";
 
 export const Answer = (props) => {
 	const {

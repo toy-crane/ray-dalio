@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Image, Flex, Link, Box } from "rebass";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
