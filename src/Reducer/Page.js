@@ -2,6 +2,10 @@ import { initialState } from "../Context/PageContext";
 import { QUIZ_LIST } from "../DataSet/QuizList";
 import { SPECIAL_CHARACTER_CODES } from "../DataSet/Character";
 
+const URL_LIST = {
+	G: "GOLDSPOON",
+};
+
 const getSpecialCharacter = (character_codes) => {
 	let characters = [];
 	const character_codes_str = character_codes.join("");
@@ -73,14 +77,13 @@ export const PageReducer = (state, action) => {
 				character_codes
 			);
 
-			const url = character + risk_score + period_score;
-			const encrypted_url = window.btoa(url);
+			const url = URL_LIST[character];
 			return {
 				...state,
 				risk_score,
 				period_score,
 				character,
-				encrypted_url,
+				url,
 				page: null,
 				character_codes: null,
 				question: null,

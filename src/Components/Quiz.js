@@ -8,7 +8,7 @@ import { QUIZ_LIST } from "../DataSet/QuizList";
 
 export const Quiz = () => {
 	const {
-		state: { page, encrypted_url },
+		state: { page, url },
 	} = useContext(PageContext);
 	const pageCount = QUIZ_LIST.length;
 	const hasNextQuiz = page && pageCount >= page;
@@ -22,6 +22,6 @@ export const Quiz = () => {
 			</div>
 		);
 	} else {
-		return <Redirect to={`result/${encrypted_url}`} />;
+		return <Redirect to={`result/${url}`} />;
 	}
 };
