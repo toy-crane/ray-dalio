@@ -3,7 +3,8 @@ import { Flex, Box } from "rebass";
 import Text from "./Text";
 import { ProgressBar } from "./ProgressBar";
 
-export const ScoreBarList = () => {
+export const ScoreBarList = (props) => {
+	const { p_score, r_score } = props;
 	return (
 		<>
 			<Box p={1}>
@@ -12,7 +13,7 @@ export const ScoreBarList = () => {
 						위험 성향
 					</Text>
 					<Box width={[3 / 5, 2 / 3]} mx={1}>
-						<ProgressBar percent={70} />
+						<ProgressBar percent={r_score} />
 					</Box>
 				</Flex>
 				<Flex my={2}>
@@ -20,7 +21,7 @@ export const ScoreBarList = () => {
 						선호 투자기간
 					</Text>
 					<Box width={[3 / 5, 2 / 3]} mx={1}>
-						<ProgressBar percent={50} />
+						<ProgressBar percent={p_score} />
 					</Box>
 				</Flex>
 			</Box>

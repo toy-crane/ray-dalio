@@ -13,7 +13,7 @@ export const HashTagText = (props) => {
 			fontWeight="bold"
 			padding={1}
 		>
-			<Text>#투자도 묵은지처럼 #요지부동</Text>
+			<Text>{props.text}</Text>
 		</Flex>
 	);
 };

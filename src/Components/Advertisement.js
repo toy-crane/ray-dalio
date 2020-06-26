@@ -3,6 +3,7 @@ import { Flex, Box } from "rebass";
 import Text from "./Text";
 
 export const Advertisement = (props) => {
+	const { n_book_url, g_book_url } = props;
 	return (
 		<>
 			<Box textAlign="center" {...props} p={1}>
@@ -16,7 +17,7 @@ export const Advertisement = (props) => {
 				<Flex justifyContent="center" my={1}>
 					<iframe
 						title="firstAd"
-						src="https://coupa.ng/bEOdE7"
+						src={n_book_url}
 						width="200"
 						height="250"
 						frameBorder="0"
@@ -24,7 +25,7 @@ export const Advertisement = (props) => {
 					></iframe>
 					<iframe
 						title="secondAd"
-						src="https://coupa.ng/bEOc1c"
+						src={g_book_url}
 						width="200"
 						height="250"
 						frameBorder="0"
