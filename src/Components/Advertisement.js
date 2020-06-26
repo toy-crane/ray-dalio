@@ -2,10 +2,10 @@ import React from "react";
 import { Flex, Box } from "rebass";
 import Text from "./Text";
 
-export const Advertisement = () => {
+export const Advertisement = (props) => {
 	return (
 		<>
-			<Box textAlign="center" my={2}>
+			<Box textAlign="center" {...props}>
 				<Text>미국 개미가 강력추천하는 금융 서적</Text>
 				<Flex justifyContent="center" my={1}>
 					<iframe

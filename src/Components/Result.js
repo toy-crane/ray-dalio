@@ -1,14 +1,14 @@
 import React from "react";
-import { Image, Flex } from "rebass";
+import { Image } from "rebass";
 import Header from "./Header";
-import Button from "./Button";
-import { useHistory } from "react-router";
 import { ScoreBarList } from "./ScoreBarList";
 import { HashTagText } from "./HashTagText";
 import { BodyText } from "./BodyText";
 import { Recommendation } from "./Recommendation";
 import { ShareSection } from "./ShareSection";
 import { Advertisement } from "./Advertisement";
+import { FacebookShareButton } from "./FacebookShareButton";
+import { RefreshButton } from "./RefreshButton";
 
 const sampleResult =
 	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
@@ -26,7 +26,6 @@ const sampleResult =
 ";
 
 export const Result = () => {
-	let history = useHistory();
 	const character = JSON.parse(localStorage.getItem("character"));
 	return (
 		<>
@@ -40,31 +39,9 @@ export const Result = () => {
 			<BodyText mb={3} text={sampleResult} />
 			<Recommendation mb={2} />
 			<ShareSection mb={4} />
-			<Flex justifyContent="center">
-				<Button
-					onClick={() => {
-						history.push("/");
-					}}
-					width="300px"
-					height="60px"
-					m={0}
-				>
-					투자 성향 테스트 다시하기
-				</Button>
-			</Flex>
-			<Advertisement />
-			<Flex justifyContent="center" my="20px">
-				<iframe
-					title="facebook"
-					src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fusaant%2F&tabs=timeline&width=500&height=70&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId=575536876504340"
-					width="400px"
-					height="70"
-					style={{ border: "none", overflow: "hidden" }}
-					scrolling="no"
-					frameBorder="0"
-					allow="encrypted-media"
-				></iframe>
-			</Flex>
+			<RefreshButton mb={2} />
+			<Advertisement my={2} />
+			<FacebookShareButton />
 		</>
 	);
 };
