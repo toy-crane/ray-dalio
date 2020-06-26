@@ -14,14 +14,14 @@ export const Advertisement = (props) => {
 						src="https://coupa.ng/bEOdE7"
 						width="200"
 						height="250"
-						frameborder="0"
+						frameBorder="0"
 						scrolling="no"
 					></iframe>
 					<iframe
 						src="https://coupa.ng/bEOc1c"
 						width="200"
 						height="250"
-						frameborder="0"
+						frameBorder="0"
 						scrolling="no"
 					></iframe>
 				</Flex>
