@@ -3,7 +3,20 @@ import { QUIZ_LIST } from "../DataSet/QuizList";
 import { SPECIAL_CHARACTER_CODES } from "../DataSet/Character";
 
 const URL_LIST = {
-	G: "GOLDSPOON",
+	G: "goldspoon",
+	C: "irondragon",
+	E: "bigear",
+	P: "pyeonggyeongjang",
+	B: "departingbus",
+	T: "paperfactory",
+	Y: "raydalio",
+	J: "coward",
+	S: "alwaysjejari",
+	W: "warren",
+	K: "savingking",
+	D: "destroyer",
+	R: "jessi",
+	M: "vision",
 };
 
 const getSpecialCharacter = (character_codes) => {
