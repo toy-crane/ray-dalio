@@ -7,6 +7,7 @@ export const initialState = {
 	period_score: 0,
 	character_codes: [],
 	character: null,
+	url: null,
 };
 const PageContext = createContext(initialState);
 

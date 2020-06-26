@@ -8,7 +8,7 @@ import { Redirect } from "react-router-dom";
 
 export const Quiz = () => {
 	const {
-		state: { page, character },
+		state: { page, url },
 	} = useContext(PageContext);
 	const pageCount = QUIZ_LIST.length;
 	const hasNextQuiz = page && pageCount >= page;
@@ -22,6 +22,6 @@ export const Quiz = () => {
 			</div>
 		);
 	} else {
-		return <Redirect to={`result/${character}`} />;
+		return <Redirect to={`result/${url}`} />;
 	}
 };

@@ -9,7 +9,7 @@ import { ShareSection } from "./ShareSection";
 import { Advertisement } from "./Advertisement";
 import { FacebookShareButton } from "./FacebookShareButton";
 import { RefreshButton } from "./RefreshButton";
-import { useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 const sampleResult =
 	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
@@ -26,31 +26,30 @@ const sampleResult =
 하지만 어설프게 위로는 함 \
 ";
 
-export const Result = () => {
-	const character = JSON.parse(localStorage.getItem("character"));
-	let history = useHistory();
-
-	useEffect(() => {
-		if (!character) {
-			history.push("/");
-		}
-		return () => {};
-	}, [character, history]);
-	return (
-		<>
-			<Header>나의 투자 성향과 비슷한 투자자는?</Header>
-			<Image
-				src={`/characters/${character}.png`}
-				sx={{ margin: "10px auto" }}
-			/>
-			<ScoreBarList mb={2} />
-			<HashTagText mb={2} />
-			<BodyText mb={2} text={sampleResult} />
-			<Recommendation mb={2} />
-			<Advertisement mb={2} />
-			<ShareSection mb={2} />
-			<RefreshButton mb={2} />
-			<FacebookShareButton />
-		</>
-	);
+export const Result = (props) => {
+	const characterCode = props.match.params.code;
+	console.log(`{characterCode} is ?`);
+	if (!characterCode) {
+		console.log("hello");
+		return <Redirect to="/" />;
+	} else {
+		const character = characterCode[0];
+		return (
+			<>
+				<Header>나의 투자 성향과 비슷한 투자자는?</Header>
+				<Image
+					src={`/characters/${character}.png`}
+					sx={{ margin: "10px auto" }}
+				/>
+				<ScoreBarList mb={2} />
+				<HashTagText mb={2} />
+				<BodyText mb={2} text={sampleResult} />
+				<Recommendation mb={2} />
+				<Advertisement mb={2} />
+				<ShareSection mb={2} />
+				<RefreshButton mb={2} />
+				<FacebookShareButton />
+			</>
+		);
+	}
 };

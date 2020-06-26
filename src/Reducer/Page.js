@@ -266,15 +266,15 @@ const findCharacter = (risk_score, period_score, character_codes) => {
 	} else {
 		if (risk_score > 23) {
 			if (period_score > 7) {
-				return "SON";
+				return "M";
 			} else {
-				return "JESSI";
+				return "R";
 			}
 		} else {
 			if (period_score > 7) {
-				return "WARREN";
+				return "W";
 			} else {
-				return "RAY";
+				return "Y";
 			}
 		}
 	}
@@ -312,21 +312,19 @@ export const PageReducer = (state, action) => {
 				period_score,
 				character_codes
 			);
-			localStorage.setItem("character", JSON.stringify(character));
-			localStorage.setItem("risk_score", JSON.stringify(risk_score));
-			localStorage.setItem("period_score", JSON.stringify(period_score));
+			const url = character + risk_score + period_score;
 			return {
 				...state,
 				risk_score,
 				period_score,
 				character,
+				url,
 				page: null,
 				character_codes: null,
 				question: null,
 				answers: null,
 			};
 		case "reset":
-			localStorage.clear();
 			return initialState;
 		default:
 			return;

@@ -10,6 +10,7 @@ import { PageProvider } from "../Context/PageContext";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import GlobalStyles from "../Styles/GlobalStyles";
 import { mobile, web } from "../Styles/BreakPoints";
+import { Redirect } from "react-router-dom";
 import Theme from "../Styles/Theme";
 
 const Container = styled.section`
@@ -37,14 +38,14 @@ function App() {
 					<BrowserRouter>
 						<Container>
 							<Switch>
-								<Route exact path="/">
-									<Home></Home>
-								</Route>
-								<Route path="/quizzes">
-									<Quiz></Quiz>
-								</Route>
-								<Route path="/result">
-									<Result></Result>
+								<Route exact path="/" component={Home} />
+								<Route path="/quizzes" component={Quiz} />
+								<Route
+									path="/result/:code"
+									component={Result}
+								/>
+								<Route path="/">
+									<Redirect to="/"></Redirect>
 								</Route>
 							</Switch>
 						</Container>
