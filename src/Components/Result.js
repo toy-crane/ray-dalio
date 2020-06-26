@@ -14,7 +14,7 @@ import { REPORTS } from "../DataSet/Report";
 
 export const Result = (props) => {
 	const characterCode = props.match.params.code;
-	if (!characterCode) {
+	if (!characterCode || !(characterCode in REPORTS)) {
 		return <Redirect to="/" />;
 	} else {
 		const {
@@ -32,7 +32,7 @@ export const Result = (props) => {
 			<>
 				<Header>나의 투자 성향과 비슷한 투자자는?</Header>
 				<Image src={image_url} sx={{ margin: "10px auto" }} />
-				<ScoreBarList mb={2} r_score={r_score} p_score={p_score}/>
+				<ScoreBarList mb={2} r_score={r_score} p_score={p_score} />
 				<HashTagText mb={2} text={hash_tags} />
 				<BodyText mb={2} text={text} />
 				<Recommendation
