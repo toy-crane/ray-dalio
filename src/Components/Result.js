@@ -34,13 +34,13 @@ export const Result = () => {
 				src={`characters/${character}.png`}
 				sx={{ margin: "10px auto" }}
 			/>
-			<ScoreBarList />
-			<HashTagText mb={1} />
-			<BodyText mb={3} text={sampleResult} />
+			<ScoreBarList mb={2} />
+			<HashTagText mb={2} />
+			<BodyText mb={2} text={sampleResult} />
 			<Recommendation mb={2} />
-			<ShareSection mb={4} />
+			<Advertisement mb={2} />
+			<ShareSection mb={2} />
 			<RefreshButton mb={2} />
-			<Advertisement my={2} />
 			<FacebookShareButton />
 		</>
 	);

@@ -6,7 +6,7 @@ import { ProgressBar } from "./ProgressBar";
 export const ScoreBarList = () => {
 	return (
 		<>
-			<Box my={1} p={[1, 5]}>
+			<Box p={1}>
 				<Flex my={2}>
 					<Text mx={2} width={[2 / 5, 1 / 3]} fontWeight="bold">
 						위험 성향

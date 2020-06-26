@@ -5,8 +5,10 @@ import Text from "./Text";
 export const Advertisement = (props) => {
 	return (
 		<>
-			<Box textAlign="center" {...props}>
-				<Text>미국 개미가 강력추천하는 금융 서적</Text>
+			<Box textAlign="center" {...props} p={1}>
+				<Text color="secondary" fontWeight="bold" p={1}>
+					내 성향에 딱! 맞는 추천 도서🤓
+				</Text>
 				<Flex justifyContent="center" my={1}>
 					<iframe
 						src="https://coupa.ng/bEOdE7"
