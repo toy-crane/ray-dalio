@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image } from "rebass";
 import Header from "./Header";
 import { ScoreBarList } from "./ScoreBarList";
@@ -9,6 +9,7 @@ import { ShareSection } from "./ShareSection";
 import { Advertisement } from "./Advertisement";
 import { FacebookShareButton } from "./FacebookShareButton";
 import { RefreshButton } from "./RefreshButton";
+import { useHistory } from "react-router-dom";
 
 const sampleResult =
 	"빈틈없고 철저하지만, 은근히 고리타분해서 당신은 양반집 \
@@ -27,6 +28,14 @@ const sampleResult =
 
 export const Result = () => {
 	const character = JSON.parse(localStorage.getItem("character"));
+	let history = useHistory();
+
+	useEffect(() => {
+		if (!character) {
+			history.push("/");
+		}
+		return () => {};
+	}, [character, history]);
 	return (
 		<>
 			<Header>나의 투자 성향과 비슷한 투자자는?</Header>
