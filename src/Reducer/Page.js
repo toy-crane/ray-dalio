@@ -312,13 +312,15 @@ export const PageReducer = (state, action) => {
 				period_score,
 				character_codes
 			);
+
 			const url = character + risk_score + period_score;
+			const encrypted_url = window.btoa(url);
 			return {
 				...state,
 				risk_score,
 				period_score,
 				character,
-				url,
+				encrypted_url,
 				page: null,
 				character_codes: null,
 				question: null,

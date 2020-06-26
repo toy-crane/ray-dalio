@@ -8,7 +8,7 @@ import { Redirect } from "react-router-dom";
 
 export const Quiz = () => {
 	const {
-		state: { page, url },
+		state: { page, encrypted_url },
 	} = useContext(PageContext);
 	const pageCount = QUIZ_LIST.length;
 	const hasNextQuiz = page && pageCount >= page;
@@ -22,6 +22,6 @@ export const Quiz = () => {
 			</div>
 		);
 	} else {
-		return <Redirect to={`result/${url}`} />;
+		return <Redirect to={`result/${encrypted_url}`} />;
 	}
 };

@@ -27,10 +27,9 @@ const sampleResult =
 ";
 
 export const Result = (props) => {
-	const characterCode = props.match.params.code;
-	console.log(`{characterCode} is ?`);
+	const encryptedCode = props.match.params.code;
+	const characterCode = window.atob(encryptedCode);
 	if (!characterCode) {
-		console.log("hello");
 		return <Redirect to="/" />;
 	} else {
 		const character = characterCode[0];
