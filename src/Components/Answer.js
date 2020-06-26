@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { PageContext } from "../Context/PageContext";
 import Button from "./Button";
-import { QUIZ_LIST } from "../Reducer/Page";
+import { QUIZ_LIST } from "../DataSet/QuizList";
 
 export const Answer = (props) => {
 	const {

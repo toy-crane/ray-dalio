@@ -3,8 +3,8 @@ import { PageContext } from "../Context/PageContext";
 import { QuizHeader } from "./QuizHeader";
 import { Question } from "./Question";
 import { AnswerList } from "./AnswerList";
-import { QUIZ_LIST } from "../Reducer/Page";
 import { Redirect } from "react-router-dom";
+import { QUIZ_LIST } from "../DataSet/QuizList";
 
 export const Quiz = () => {
 	const {

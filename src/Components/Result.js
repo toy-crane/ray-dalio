@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Image } from "rebass";
 import Header from "./Header";
 import { ScoreBarList } from "./ScoreBarList";
