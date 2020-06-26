@@ -29,7 +29,7 @@ export const ShareButtonList = () => {
 						}}
 					>
 						<Image
-							src={`icons/url.png`}
+							src={`/icons/url.png`}
 							width="48px"
 							height="48px"
 						/>
@@ -39,7 +39,7 @@ export const ShareButtonList = () => {
 			<Box mx="8px">
 				<FacebookShareButton url={HOME_URL} quote={SHARE_TITLE}>
 					<Image
-						src={`icons/facebook.png`}
+						src={`/icons/facebook.png`}
 						width="48px"
 						height="48px"
 					/>
@@ -48,7 +48,7 @@ export const ShareButtonList = () => {
 			<Box mx="8px">
 				<TwitterShareButton url={HOME_URL} title={SHARE_TITLE}>
 					<Image
-						src={`icons/twitter.png`}
+						src={`/icons/twitter.png`}
 						width="48px"
 						height="48px"
 					/>
@@ -62,7 +62,11 @@ export const ShareButtonList = () => {
 						cursor: "pointer",
 					}}
 				>
-					<Image src={`icons/kakao.png`} width="48px" height="48px" />
+					<Image
+						src={`/icons/kakao.png`}
+						width="48px"
+						height="48px"
+					/>
 				</Link>
 			</Box>
 		</Flex>

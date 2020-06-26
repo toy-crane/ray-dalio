@@ -8,7 +8,7 @@ export const RecommendationCard = (props) => {
 			<Heading fontSize={[4, 5]}>
 				{props.type === "good" ? "환상의 캐미" : "환장의 캐미"}
 			</Heading>
-			<Image src={`icons/${props.name}.png`} />
+			<Image src={`/icons/${props.name}.png`} />
 			<Text>변동성이 큰 바이오주</Text>
 		</Card>
 	);

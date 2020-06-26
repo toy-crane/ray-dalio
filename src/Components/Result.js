@@ -40,7 +40,7 @@ export const Result = () => {
 		<>
 			<Header>나의 투자 성향과 비슷한 투자자는?</Header>
 			<Image
-				src={`characters/${character}.png`}
+				src={`/characters/${character}.png`}
 				sx={{ margin: "10px auto" }}
 			/>
 			<ScoreBarList mb={2} />
