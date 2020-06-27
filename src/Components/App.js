@@ -33,9 +33,9 @@ function App() {
 		<>
 			<PageProvider>
 				<ThemeProvider theme={Theme}>
-					<Head />
-					<Global styles={GlobalStyles} />
 					<BrowserRouter>
+						<Head />
+						<Global styles={GlobalStyles} />
 						<Container>
 							<Switch>
 								<Route exact path="/" component={Home} />

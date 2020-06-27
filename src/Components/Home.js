@@ -18,7 +18,7 @@ export const Home = () => {
 		<Box>
 			<Header mb={[1, 2]}>나의 투자 성향과 비슷한 투자자 찾기</Header>
 			<Image
-				src="main.jpg"
+				src="/main.jpg"
 				sx={{
 					borderRadius: 8,
 				}}

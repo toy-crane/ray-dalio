@@ -32,6 +32,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEU1Ve",
 		image_url: "/characters/G.png",
+		og_image_url: "https://www.usaant.kr/characters/G.png",
+		og_title: "저는 금수저에요!",
 	},
 	irondragon: {
 		text:
@@ -44,6 +46,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEU1Ve",
 		image_url: "/characters/C.png",
+		og_image_url: "https://www.usaant.kr/characters/C.png",
+		og_title: "저는 곽철용이랑 비슷한 투자자입니다.",
 	},
 	bigear: {
 		text:
@@ -56,6 +60,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEVcfw",
 		image_url: "/characters/E.png",
+		og_image_url: "https://www.usaant.kr/characters/E.png",
+		og_title: "저는 귀가 너무 커서 슬픈 투자자에요!",
 	},
 	pyeonggyeongjang: {
 		text:
@@ -68,6 +74,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEVeFo",
 		image_url: "/characters/P.png",
+		og_image_url: "https://www.usaant.kr/characters/P.png",
+		og_title: "저는 평경장입니다!",
 	},
 	departingbus: {
 		text:
@@ -80,6 +88,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEVgs1",
 		image_url: "/characters/B.png",
+		og_image_url: "https://www.usaant.kr/characters/B.png",
+		og_title: "저는 미련이 많은 투자자에요!",
 	},
 	paperfactory: {
 		text:
@@ -92,6 +102,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEU2xd",
 		image_url: "/characters/T.png",
+		og_image_url: "https://www.usaant.kr/characters/T.png",
+		og_title: "저는 휴지 공장 공장장이에요!",
 	},
 	raydalio: {
 		text:
@@ -104,6 +116,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEU2xd",
 		image_url: "/characters/Y.png",
+		og_image_url: "https://www.usaant.kr/characters/Y.png",
+		og_title: "저는 레이 달리오와 비슷해요!",
 	},
 	coward: {
 		text:
@@ -116,6 +130,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEU2xd",
 		image_url: "/characters/J.png",
+		og_image_url: "https://www.usaant.kr/characters/J.png",
+		og_title: "저는 겁쟁이랍니다",
 	},
 	alwaysjejari: {
 		text:
@@ -128,6 +144,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEU2xd",
 		image_url: "/characters/S.png",
+		og_image_url: "https://www.usaant.kr/characters/S.png",
+		og_title: "저는 매번 제자리라 슬픈 투자자에요",
 	},
 	warren: {
 		text:
@@ -140,6 +158,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEVbNV",
 		g_book_url: "https://coupa.ng/bEU2xd",
 		image_url: "/characters/W.png",
+		og_image_url: "https://www.usaant.kr/characters/W.png",
+		og_title: "저는 워렌 버핏같은 투자자에요",
 	},
 	savingking: {
 		text:
@@ -152,6 +172,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEVgs1",
 		image_url: "/characters/K.png",
+		og_image_url: "https://www.usaant.kr/characters/K.png",
+		og_title: "저는 주식보다 예금이나 할께요",
 	},
 	destroyer: {
 		text:
@@ -164,6 +186,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEVgs1",
 		image_url: "/characters/D.png",
+		og_image_url: "https://www.usaant.kr/characters/D.png",
+		og_title: "저는 모든걸 파괴하는 파괴왕이에요",
 	},
 	jessi: {
 		text:
@@ -176,6 +200,8 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEVgs1",
 		image_url: "/characters/R.png",
+		og_image_url: "https://www.usaant.kr/characters/R.png",
+		og_title: "저는 단타의 전설, 제시 리버모어 같은 투자자에요",
 	},
 	vision: {
 		text:
@@ -188,5 +214,7 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEVgs1",
 		image_url: "/characters/M.png",
+		og_image_url: "https://www.usaant.kr/characters/M.png",
+		og_title: "저는 손정의와 비슷한 투자자에요",
 	},
 };
