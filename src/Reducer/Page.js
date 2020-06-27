@@ -10,7 +10,7 @@ const URL_LIST = {
 	B: "departingbus",
 	T: "paperfactory",
 	Y: "raydalio",
-	J: "coward",
+	J: "gub",
 	S: "alwaysjejari",
 	W: "warren",
 	K: "savingking",

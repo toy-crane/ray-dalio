@@ -13,7 +13,7 @@ import { Redirect } from "react-router-dom";
 import { REPORTS } from "../DataSet/Report";
 
 export const Result = (props) => {
-	const characterCode = props.match.params.code;
+	const characterCode = props.match.params.code.toLowerCase();
 	if (!characterCode || !(characterCode in REPORTS)) {
 		return <Redirect to="/" />;
 	} else {

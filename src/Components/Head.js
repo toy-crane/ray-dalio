@@ -5,13 +5,14 @@ import { REPORTS } from "../DataSet/Report";
 
 export const Head = () => {
 	let location = useLocation();
-	let url, og_description, og_image_url, og_title, og_url;
+	let og_description, og_image_url, og_title, og_url;
 	if (location.pathname.includes("/result")) {
-		url = location.pathname.split("/")[2];
-		const report = REPORTS[url];
-		og_title = report.og_title;
-		og_image_url = report.og_image_url;
-		og_description = report.text;
+		og_url = location.pathname.split("/")[2];
+		const report = REPORTS[og_url.toLowerCase()];
+		console.log(og_url, report);
+		og_title = report["og_title"];
+		og_image_url = report["og_image_url"];
+		og_description = report["text"];
 	} else {
 		og_title = "나와 성향이 비슷한 투자자 찾기";
 		og_url = "http://www.usaant.kr";

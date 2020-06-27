@@ -119,7 +119,7 @@ export const REPORTS = {
 		og_image_url: "https://www.usaant.kr/characters/Y.png",
 		og_title: "저는 레이 달리오와 비슷해요!",
 	},
-	coward: {
+	gub: {
 		text:
 			"왤케 매번 위험한 거만 하는거에요? 매번 깡통만 찰꺼에요? 깡통 또 깡통. 지겹지도 않나요?",
 		hash_tags: "#이제 그만 #다짐해요 우량주에 투자하기로",
