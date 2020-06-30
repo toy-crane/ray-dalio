@@ -31,8 +31,8 @@ export const REPORTS = {
 		bad_pick: "theme",
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEU1Ve",
-		image_url: "/characters/G.png",
-		og_image_url: "https://www.usaant.kr/characters/G.png",
+		image_url: "characters/g.png",
+		og_image_url: "characters/g.png",
 		og_title: "저는 금수저에요!",
 	},
 	irondragon: {
@@ -45,8 +45,8 @@ export const REPORTS = {
 		bad_pick: "etf",
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEU1Ve",
-		image_url: "/characters/C.png",
-		og_image_url: "https://www.usaant.kr/characters/C.png",
+		image_url: "/characters/c.png",
+		og_image_url: "/opengraph/c.png",
 		og_title: "저는 곽철용이랑 비슷한 투자자입니다.",
 	},
 	bigear: {

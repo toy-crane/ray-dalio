@@ -3,20 +3,20 @@ import { QUIZ_LIST } from "../DataSet/QuizList";
 import { SPECIAL_CHARACTER_CODES } from "../DataSet/Character";
 
 const URL_LIST = {
-	G: "goldspoon",
-	C: "irondragon",
-	E: "bigear",
-	P: "pyeonggyeongjang",
-	B: "departingbus",
-	T: "paperfactory",
-	Y: "raydalio",
-	J: "gub",
-	S: "alwaysjejari",
-	W: "warren",
-	K: "savingking",
-	D: "destroyer",
-	R: "jessi",
-	M: "vision",
+	g: "goldspoon",
+	c: "irondragon",
+	e: "bigear",
+	p: "pyeonggyeongjang",
+	b: "departingbus",
+	t: "paperfactory",
+	y: "raydalio",
+	j: "gub",
+	s: "alwaysjejari",
+	w: "warren",
+	k: "savingking",
+	d: "destroyer",
+	r: "jessi",
+	m: "vision",
 };
 
 const getSpecialCharacter = (character_codes) => {
@@ -26,7 +26,7 @@ const getSpecialCharacter = (character_codes) => {
 		const count = (character_codes_str.match(new RegExp(code, "g")) || [])
 			.length;
 		if (count >= 1) {
-			if (count === 2 && code === "G") {
+			if (count === 2 && code === "g") {
 				characters.push(code);
 			} else {
 				characters.push(code);
@@ -43,15 +43,15 @@ const findCharacter = (risk_score, period_score, character_codes) => {
 	} else {
 		if (risk_score > 23) {
 			if (period_score > 7) {
-				return "M";
+				return "m";
 			} else {
-				return "R";
+				return "r";
 			}
 		} else {
 			if (period_score > 7) {
-				return "W";
+				return "w";
 			} else {
-				return "Y";
+				return "y";
 			}
 		}
 	}
