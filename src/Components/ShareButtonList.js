@@ -3,7 +3,8 @@ import { Image, Flex, Link, Box } from "rebass";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
 
-const HOME_URL = "http://www.usaant.kr";
+const PATH = window.location.pathname;
+const SHARE_URL = `https://usaant.kr${PATH}`;
 const SHARE_TITLE = "나와 가장 맞는 투자자 알아보기";
 
 export const ShareButtonList = () => {
@@ -20,7 +21,7 @@ export const ShareButtonList = () => {
 	return (
 		<Flex justifyContent="center" my={0}>
 			<Box mx="8px">
-				<CopyToClipboard text={HOME_URL}>
+				<CopyToClipboard text={SHARE_URL}>
 					<Link
 						variant="nav"
 						onClick={() => alert("URL이 복사되었습니다.")}
@@ -37,7 +38,7 @@ export const ShareButtonList = () => {
 				</CopyToClipboard>
 			</Box>
 			<Box mx="8px">
-				<FacebookShareButton url={HOME_URL} quote={SHARE_TITLE}>
+				<FacebookShareButton url={SHARE_URL} quote={SHARE_TITLE}>
 					<Image
 						src={`/icons/facebook.png`}
 						width="48px"
@@ -46,7 +47,7 @@ export const ShareButtonList = () => {
 				</FacebookShareButton>
 			</Box>
 			<Box mx="8px">
-				<TwitterShareButton url={HOME_URL} title={SHARE_TITLE}>
+				<TwitterShareButton url={SHARE_URL} title={SHARE_TITLE}>
 					<Image
 						src={`/icons/twitter.png`}
 						width="48px"
