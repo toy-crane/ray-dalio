@@ -46,7 +46,7 @@ export const REPORTS = {
 		n_book_url: "https://coupa.ng/bEU2xd",
 		g_book_url: "https://coupa.ng/bEU1Ve",
 		image_url: "/characters/c.png",
-		og_image_url: "/opengraph/c.png",
+		og_image_url: "https://usaant.kr/opengraph/c.png",
 		og_title: "저는 곽철용이랑 비슷한 투자자입니다.",
 	},
 	bigear: {
