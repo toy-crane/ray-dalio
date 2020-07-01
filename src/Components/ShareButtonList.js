@@ -2,22 +2,29 @@ import React, { useEffect } from "react";
 import { Image, Flex, Link, Box } from "rebass";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
+import { useScript } from "../hooks/UseScript";
 
 export const ShareButtonList = () => {
 	const PATH = window.location.pathname;
-	const SHARE_URL = `https://usaant.kr${PATH}`;
+	const SHARE_URL = `https://www.usaant.kr${PATH}`;
 	const SHARE_TITLE = "나와 가장 맞는 투자자 알아보기";
-
-	useEffect(() => {
+	const [loaded, error] = useScript(
+		"https://developers.kakao.com/sdk/js/kakao.js"
+	);
+	if (loaded && !error) {
 		window.Kakao.init("ddde4ab4c29d7e63d1eeb601ba119198");
 		window.Kakao.Link.createScrapButton({
 			container: "#kakao-link-btn",
 			requestUrl: SHARE_URL,
 		});
+	}
+	useEffect(() => {
 		return () => {
-			window.Kakao.cleanup();
+			if (loaded) {
+				window.Kakao.cleanup();
+			}
 		};
-	}, [SHARE_URL]);
+	}, [SHARE_URL, loaded]);
 	return (
 		<Flex justifyContent="center" my={0}>
 			<Box mx="8px">
