@@ -19,8 +19,8 @@ export const LoadingPage = () => {
 
 	return (
 		<>
-			<Header mb={[1, 2]}>투자 성향 분석중...</Header>
-			<Flex justifyContent="center">
+			<Header mb={3}>투자 성향 분석중...</Header>
+			<Flex justifyContent="center" mx={[5, 0]}>
 				<Image src="/loading.gif" alt="loading..." />
 			</Flex>
 		</>

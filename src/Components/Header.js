@@ -10,6 +10,10 @@ const customStyled = {
 	fontSize: [5, 6],
 };
 
-export default ({ children }) => {
-	return <Heading sx={customStyled}>{children}</Heading>;
+export default (props) => {
+	return (
+		<Heading {...props} sx={customStyled}>
+			{props.children}
+		</Heading>
+	);
 };
