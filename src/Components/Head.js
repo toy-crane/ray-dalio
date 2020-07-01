@@ -9,7 +9,6 @@ export const Head = () => {
 	if (location.pathname.includes("/result")) {
 		og_url = location.pathname.split("/")[2];
 		const report = REPORTS[og_url.toLowerCase()];
-		console.log(og_url, report);
 		og_title = report["og_title"];
 		og_image_url = report["og_image_url"];
 		og_description = report["text"];
@@ -50,7 +49,6 @@ export const Head = () => {
 				sizes="16x16"
 				href="favicons/favicon-16x16.png"
 			/>
-			<script src="static/kakao.min.js"></script>
 			<script src="https://ads-partners.coupang.com/g.js"></script>
 		</Helmet>
 	);
