@@ -14,6 +14,9 @@ export const ShareButtonList = () => {
 			container: "#kakao-link-btn",
 			requestUrl: SHARE_URL,
 		});
+		return () => {
+			window.Kakao.cleanup();
+		};
 	}, [SHARE_URL]);
 	return (
 		<Flex justifyContent="center" my={0}>
