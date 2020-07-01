@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { PageContext } from "../Context/PageContext";
 import { Image, Flex } from "rebass";
+import Header from "./Header";
 
 export const LoadingPage = () => {
 	let history = useHistory();
@@ -17,8 +18,11 @@ export const LoadingPage = () => {
 	}, [history, url]);
 
 	return (
-		<Flex justifyContent="center">
-			<Image src="/loading.gif" alt="loading..." />
-		</Flex>
+		<>
+			<Header mb={[1, 2]}>투자 성향 분석중...</Header>
+			<Flex justifyContent="center">
+				<Image src="/loading.gif" alt="loading..." />
+			</Flex>
+		</>
 	);
 };
