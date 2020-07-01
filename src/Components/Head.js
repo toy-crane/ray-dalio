@@ -55,7 +55,6 @@ export const Head = () => {
 				sizes="32x32"
 				href="favicons/favicon-32x32.png"
 			/>
-			<script src="https://ads-partners.coupang.com/g.js"></script>
 		</Helmet>
 	);
 };
