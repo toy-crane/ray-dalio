@@ -22,6 +22,6 @@ export const Quiz = () => {
 			</div>
 		);
 	} else {
-		return <Redirect to={`result/${url}`} />;
+		return <Redirect to="loading" />;
 	}
 };

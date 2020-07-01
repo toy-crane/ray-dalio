@@ -12,6 +12,7 @@ import GlobalStyles from "../Styles/GlobalStyles";
 import { mobile, web } from "../Styles/BreakPoints";
 import { Redirect } from "react-router-dom";
 import Theme from "../Styles/Theme";
+import { LoadingPage } from "./LoadingPage";
 
 const Container = styled.section`
 	padding: 0 0.5rem;
@@ -40,6 +41,10 @@ function App() {
 							<Switch>
 								<Route exact path="/" component={Home} />
 								<Route path="/quizzes" component={Quiz} />
+								<Route
+									path="/loading"
+									component={LoadingPage}
+								/>
 								<Route
 									path="/result/:code"
 									component={Result}
