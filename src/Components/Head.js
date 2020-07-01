@@ -15,7 +15,7 @@ export const Head = () => {
 	} else {
 		og_title = "나와 성향이 비슷한 투자자 찾기";
 		og_url = "http://www.usaant.kr";
-		og_image_url = "opengraph/main.png";
+		og_image_url = "https://www.usaant.kr/opengraph/main.jpg";
 		og_description =
 			"전설적인 투자자들과 나의 투자 스타일을 비교해 볼까요?";
 	}
