@@ -9,20 +9,20 @@ export const ScoreBarList = (props) => {
 		<>
 			<Box p={1}>
 				<Flex my={2}>
-					<Text mx={2} width={[2 / 5, 1 / 3]} fontWeight="bold">
+					<Text mx={2} width={[1 / 3, 1 / 3]} fontWeight="bold">
 						위험 성향
 					</Text>
-					<Box width={[3 / 5, 2 / 3]} mx={1}>
+					<Flex width={[2 / 3, 2 / 3]} mx={2} alignItems="center">
 						<ProgressBar percent={r_score} />
-					</Box>
+					</Flex>
 				</Flex>
 				<Flex my={2}>
-					<Text mx={2} width={[2 / 5, 1 / 3]} fontWeight="bold">
+					<Text mx={2} width={[1 / 3, 1 / 3]} fontWeight="bold">
 						선호 투자기간
 					</Text>
-					<Box width={[3 / 5, 2 / 3]} mx={1}>
+					<Flex width={[2 / 3, 2 / 3]} mx={2} alignItems="center">
 						<ProgressBar percent={p_score} />
-					</Box>
+					</Flex>
 				</Flex>
 			</Box>
 		</>
