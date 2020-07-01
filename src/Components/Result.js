@@ -26,8 +26,7 @@ export const Result = (props) => {
 			hash_tags,
 			good_pick,
 			bad_pick,
-			n_book_url,
-			g_book_url,
+			books,
 			r_score,
 			p_score,
 		} = REPORTS[characterCode];
@@ -45,8 +44,7 @@ export const Result = (props) => {
 				/>
 				<Advertisement
 					mb={2}
-					n_book_url={n_book_url}
-					g_book_url={g_book_url}
+					books={books}
 				/>
 				<ShareSection mb={2} />
 				<RefreshButton mb={2} />

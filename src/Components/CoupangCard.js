@@ -4,7 +4,8 @@ import { Link, Image, Flex } from "rebass";
 export const CoupangCard = (props) => {
 	const ButtonClicked = () => {
 		window.analytics.track("Shopping Button Clicked", {
-			product: props.url,
+			url: props.url,
+			korName: props.title,
 		});
 	};
 	return (
@@ -17,9 +18,9 @@ export const CoupangCard = (props) => {
 			>
 				<Image
 					src={props.imageUrl}
-					alt={props.imageMessage}
-					width="150"
-					height="300"
+					alt={props.title}
+					width="180"
+					height="360"
 				></Image>
 			</Link>
 		</Flex>
