@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image } from "rebass";
 import Header from "./Header";
 import { ScoreBarList } from "./ScoreBarList";
@@ -14,6 +14,9 @@ import { REPORTS } from "../DataSet/Report";
 
 export const Result = (props) => {
 	const characterCode = props.match.params.code.toLowerCase();
+	useEffect(() => {
+		window.analytics.page();
+	}, []);
 	if (!characterCode || !(characterCode in REPORTS)) {
 		return <Redirect to="/" />;
 	} else {

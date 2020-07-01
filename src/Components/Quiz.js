@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { PageContext } from "../Context/PageContext";
 import { QuizHeader } from "./QuizHeader";
 import { Question } from "./Question";
@@ -10,6 +10,9 @@ export const Quiz = () => {
 	const {
 		state: { page, url },
 	} = useContext(PageContext);
+	useEffect(() => {
+		window.analytics.page();
+	});
 	const pageCount = QUIZ_LIST.length;
 	const hasNextQuiz = page && pageCount >= page;
 	if (hasNextQuiz) {
@@ -22,6 +25,7 @@ export const Quiz = () => {
 			</div>
 		);
 	} else {
+		window.analytics.track("Quiz Completed");
 		return <Redirect to="loading" />;
 	}
 };

@@ -12,6 +12,7 @@ export const Home = () => {
 	let history = useHistory();
 	const { dispatch } = useContext(PageContext);
 	useEffect(() => {
+		window.analytics.page();
 		dispatch({ type: "reset" });
 	});
 	return (
@@ -30,7 +31,12 @@ export const Home = () => {
 			</Text>
 			<Flex justifyContent="center">
 				<Button
-					onClick={() => history.push("/quizzes")}
+					onClick={() => {
+						window.analytics.track(
+							"Seeking Investor Button Clicked"
+						);
+						history.push("/quizzes");
+					}}
 					width={[1, "300px"]}
 					height="60px"
 					m={0}

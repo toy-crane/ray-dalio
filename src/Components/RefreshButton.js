@@ -9,6 +9,7 @@ export const RefreshButton = () => {
 		<Flex justifyContent="center">
 			<Button
 				onClick={() => {
+					window.analytics.track("Refresh Button Clicked");
 					history.push("/");
 				}}
 				width="300px"

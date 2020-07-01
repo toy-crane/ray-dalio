@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Box } from "rebass";
 import Text from "./Text";
 import { useScript } from "../hooks/UseScript";
+import { CoupangCard } from "./CoupangCard";
 
 export const Advertisement = (props) => {
 	const { n_book_url, g_book_url } = props;
@@ -18,22 +19,14 @@ export const Advertisement = (props) => {
 						</span>
 					</Text>
 					<Flex justifyContent="center" my={1}>
-						<iframe
-							title="firstAd"
-							src={n_book_url}
-							width="200"
-							height="250"
-							frameBorder="0"
-							scrolling="no"
-						></iframe>
-						<iframe
-							title="secondAd"
-							src={g_book_url}
-							width="200"
-							height="250"
-							frameBorder="0"
-							scrolling="no"
-						></iframe>
+						<CoupangCard
+							url="https://coupa.ng/bFdysx"
+							imageUrl="https://static.coupangcdn.com/image/affiliate/banner/d59e396246e4a834985a72d55146b971@2x.jpg"
+						/>
+						<CoupangCard
+							url="https://coupa.ng/bFdysx"
+							imageUrl="https://static.coupangcdn.com/image/affiliate/banner/d59e396246e4a834985a72d55146b971@2x.jpg"
+						/>
 					</Flex>
 				</Box>
 			</>
