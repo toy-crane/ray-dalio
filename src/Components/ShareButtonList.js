@@ -1,23 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image, Flex, Link, Box } from "rebass";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FacebookShareButton, TwitterShareButton } from "react-share";
 
-const PATH = window.location.pathname;
-const SHARE_URL = `https://usaant.kr${PATH}`;
-const SHARE_TITLE = "나와 가장 맞는 투자자 알아보기";
-
 export const ShareButtonList = () => {
-	function sendLink() {
+	const PATH = window.location.pathname;
+	const SHARE_URL = `https://usaant.kr${PATH}`;
+	const SHARE_TITLE = "나와 가장 맞는 투자자 알아보기";
+
+	useEffect(() => {
 		window.Kakao.init("ddde4ab4c29d7e63d1eeb601ba119198");
-		window.Kakao.Link.sendCustom({
-			templateId: 30926,
-			templateArgs: {
-				title: "테스트",
-				description: "설명 영역입니다.",
-			},
+		window.Kakao.Link.createScrapButton({
+			container: "#kakao-link-btn",
+			requestUrl: SHARE_URL,
 		});
-	}
+	}, [SHARE_URL]);
 	return (
 		<Flex justifyContent="center" my={0}>
 			<Box mx="8px">
@@ -56,19 +53,13 @@ export const ShareButtonList = () => {
 				</TwitterShareButton>
 			</Box>
 			<Box mx="8px">
-				<Link
-					variant="nav"
-					onClick={sendLink}
-					sx={{
-						cursor: "pointer",
-					}}
-				>
+				<a id="kakao-link-btn" style={{ cursor: "pointer" }}>
 					<Image
 						src={`/icons/kakao.png`}
 						width="48px"
 						height="48px"
 					/>
-				</Link>
+				</a>
 			</Box>
 		</Flex>
 	);
