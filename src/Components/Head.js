@@ -1,17 +1,23 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { REPORTS } from "../DataSet/Report";
 
 export const Head = () => {
 	let location = useLocation();
+	let history = useHistory();
 	let og_description, og_image_url, og_title, og_url;
 	if (location.pathname.includes("/result")) {
 		og_url = location.pathname.split("/")[2];
-		const report = REPORTS[og_url.toLowerCase()];
-		og_title = report["og_title"];
-		og_image_url = report["og_image_url"];
-		og_description = report["text"];
+		if (og_url && REPORTS[og_url.toLowerCase()]) {
+			const report = REPORTS[og_url.toLowerCase()];
+			og_title = report["og_title"];
+			og_image_url = report["og_image_url"];
+			og_description = report["text"];
+		} else {
+			history.push(`/`);
+		}
 	} else {
 		og_title = "나와 성향이 비슷한 투자자 찾기";
 		og_url = "http://www.usaant.kr";
