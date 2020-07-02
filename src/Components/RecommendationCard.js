@@ -15,7 +15,7 @@ export const RecommendationCard = (props) => {
 	return (
 		<Card width={200} textAlign="center">
 			<Heading fontSize={[4, 5]}>
-				{props.type === "good" ? "환상의 캐미" : "환장의 캐미"}
+				{props.type === "good" ? "나를 부자로 만드는" : "나를 가난하게 만드는"}
 			</Heading>
 			<Image src={`/icons/${props.name}.png`} />
 			<Text>{description[props.name]}</Text>
