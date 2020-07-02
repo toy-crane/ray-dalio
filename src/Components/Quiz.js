@@ -8,7 +8,7 @@ import { QUIZ_LIST } from "../DataSet/QuizList";
 
 export const Quiz = () => {
 	const {
-		state: { page, url },
+		state: { page },
 	} = useContext(PageContext);
 	useEffect(() => {
 		window.analytics.page();
