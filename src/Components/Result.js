@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { Image } from "rebass";
 import Header from "./Header";
 import { ScoreBarList } from "./ScoreBarList";
-import { HashTagText } from "./HashTagText";
-import { BodyText } from "./BodyText";
+
 import { Recommendation } from "./Recommendation";
 import { ShareSection } from "./ShareSection";
 import { Advertisement } from "./Advertisement";
@@ -11,6 +10,7 @@ import { FacebookShareButton } from "./FacebookShareButton";
 import { RefreshButton } from "./RefreshButton";
 import { Redirect } from "react-router-dom";
 import { REPORTS } from "../DataSet/Report";
+import { ResultText } from "./ResultText";
 
 export const Result = (props) => {
 	const characterCode = props.match.params.code.toLowerCase();
@@ -43,8 +43,7 @@ export const Result = (props) => {
 					i_score={i_score}
 					b_score={b_score}
 				/>
-				<HashTagText text={hash_tags} />
-				<BodyText mb={2} text={text} textAlign="center" />
+				<ResultText hash_tags={hash_tags} text={text} />
 				<Recommendation
 					mb={2}
 					good_pick={good_pick}

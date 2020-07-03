@@ -11,7 +11,6 @@ export const HashTagText = (props) => {
 			mb={0}
 			color="secondary"
 			fontWeight="bold"
-			px={[1, 5]}
 		>
 			<Text>{props.text}</Text>
 		</Flex>
