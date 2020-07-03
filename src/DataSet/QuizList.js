@@ -71,7 +71,7 @@ export const QUIZ_LIST = [
 	},
 	{
 		id: 3,
-		question: "주식이 나의 자산에서 차지하는 비중은?",
+		question: "나의 자산에서 주식이 차지하는 비중은?",
 		answers: [
 			{
 				text: "0 ~ 10%",
@@ -140,7 +140,7 @@ export const QUIZ_LIST = [
 	{
 		id: 5,
 		question:
-			"보유하고 있는 주식이 내일 60% 확률로 하한가라고 합니다. 어떻게 할 예정이신가요?",
+			"보유하고 있는 주식이 내일 60% 확률로 떨어진다고 합니다. 어떻게 하실건가요?",
 		answers: [
 			{
 				text: "일부만 팔고, 일부 그대로 두어 40% 상승에 베팅한다.",
@@ -150,15 +150,14 @@ export const QUIZ_LIST = [
 				period_score: 0,
 			},
 			{
-				text: "장기적으로 오른 다는 생각으로 그대로 둔다.",
+				text: "장기적으로 오를 것이므로 그대로 둔다.",
 				code: "a21",
 				character_code: "a",
 				risk_score: 2,
 				period_score: 1,
 			},
 			{
-				text:
-					"나의 주식보는 안목을 믿기 때문에 기회라고 생각하고, 추가 매수한다.",
+				text: "기회라고 생각하고, 추가 매수한다.",
 				code: "c31",
 				character_code: "c",
 				risk_score: 3,
@@ -219,31 +218,28 @@ export const QUIZ_LIST = [
 		question: "투자할 주식을 선택하는 방식은?",
 		answers: [
 			{
-				text:
-					"안정적으로 돈을 벌고 있으나, 시장에서 저평가 받고 있는 주식을 매입한다.",
+				text: "안정적으로 돈을 벌고 있으며, 저평가된 주식을 매입한다.",
 				code: "a20",
 				character_code: "a",
 				risk_score: 2,
 				period_score: 0,
 			},
 			{
-				text:
-					"앞으로 IT 수요가 높아질테니 성장성이 높은 IT 주식을 매입한다.",
+				text: "IT 수요가 높아질테니 성장성이 높은 IT 주식을 매입한다.",
 				code: "a30",
 				character_code: "a",
 				risk_score: 3,
 				period_score: 0,
 			},
 			{
-				text:
-					"주식 잘한다고 소문난 옆 팀 김 대리의 추천 종목을 매입한다.",
+				text: "주식 잘한다고 소문난 김 대리의 추천 종목을 매입한다.",
 				code: "e40",
 				character_code: "e",
 				risk_score: 4,
 				period_score: 0,
 			},
 			{
-				text: "위험성이 높더라도 변동성이 높은 테마주를 매입한다. ",
+				text: "위험성이 높더라도 변동성이 큰 테마주를 매입한다. ",
 				code: "a40",
 				character_code: "a",
 				risk_score: 4,
@@ -254,18 +250,17 @@ export const QUIZ_LIST = [
 	{
 		id: 8,
 		question:
-			"A 주식에 500만원을 투자했습니다. 얼마 주기로 주식을 확인하시나요?",
+			"A 주식에 500만원을 투자했습니다. 주식을 어느 주기로 확인하시나요?",
 		answers: [
 			{
-				text:
-					"오늘 하루 장이 어땠는지 볼까? 출근, 퇴근 시간 정도에만 확인한다.",
+				text: "오늘 장이 어땠는지 출근, 퇴근 시간 정도에만 확인한다.",
 				code: "a11",
 				character_code: "a",
 				risk_score: 1,
 				period_score: 0,
 			},
 			{
-				text: "처음부터 먼 미래를 보고 투자했으니, 확인할 필요도 없다.",
+				text: "먼 미래를 보고 투자했으니, 확인할 필요도 없다.",
 				code: "a12",
 				character_code: "a",
 				risk_score: 1,
@@ -279,8 +274,7 @@ export const QUIZ_LIST = [
 				period_score: 0,
 			},
 			{
-				text:
-					"초초하다. 머리 속에서 500만원이 떠나지 않는다. 스마트폰은 나의 신체 일부가 되어 버렸다.",
+				text: "스마트폰은 나와 한 몸이 되어 버렸다.",
 				code: "j10",
 				character_code: "j",
 				risk_score: 3,
@@ -326,7 +320,7 @@ export const QUIZ_LIST = [
 	{
 		id: 10,
 		question:
-			"회사 동료가 테마주에 투자하여 5천만원을 벌었다고 자랑하며,  종목 추천을 해줬다. 당신은 어떻게 하실껀가요?",
+			"회사 동료가 테마주에 투자하여 5천만원을 벌었다며, 종목을 추천해줬다. 어떻게 하실건가요?",
 		answers: [
 			{
 				text: "무서워서 투자하지 못하고, 나중에 크게 후회한다.",
@@ -362,18 +356,17 @@ export const QUIZ_LIST = [
 	{
 		id: 11,
 		question:
-			"새로운 바이러스가 발병해서 연초 대비 코스피 지수가 50% 폭락했습니다. 재산 5000만원을 어떻게 투자하실 껀가요?",
+			"새로운 바이러스가 발병해 연초 대비 지수가 50% 폭락했습니다. 5000만원을 어떻게 투자 하실건가요?",
 		answers: [
 			{
-				text: "지금의 상황이 무섭다. 일단 현금을 보유하고 관망한다. ",
+				text: "지금의 상황이 무서워 현금을 보유하고 관망한다. ",
 				code: "b10",
 				character_code: "b",
 				risk_score: 1,
 				period_score: 0,
 			},
 			{
-				text:
-					"더 떨어 질수도 있으니 500만원씩 나누어 10번 분할 매수한다.",
+				text: "더 떨어 질수도 있으니 500만원씩 나누어 분할 매수한다.",
 				code: "a20",
 				character_code: "a",
 				risk_score: 2,
@@ -389,7 +382,7 @@ export const QUIZ_LIST = [
 			},
 			{
 				text:
-					"신이 주신 기회다. 5000만원을 전부 투자하고, 그 투자금을 담보로 또 투자한다.",
+					"신이 주신 기회다. 전부 투자하고, 그 투자금을 담보로 또 투자한다.",
 				code: "c40",
 				character_code: "c",
 				risk_score: 4,

@@ -15,7 +15,7 @@ const customStyled = {
 export default (props) => (
 	<Button
 		{...props}
-		fontSize={[0, 2]}
+		fontSize={2}
 		fontWeight="bold"
 		lineHeight="button"
 		padding={1}

@@ -17,7 +17,7 @@ export const Home = () => {
 	});
 	return (
 		<Box>
-			<Header mb={[1, 2]}>나의 투자 성향과 비슷한 투자자 찾기</Header>
+			<Header mb={[1, 2]}>나의 투자 성향과 비슷한 투자자는?</Header>
 			<Image
 				src="/main.jpg"
 				sx={{
@@ -25,11 +25,13 @@ export const Home = () => {
 				}}
 			/>
 			<Text my={[3, 1]} p={[1, 2]}>
-				워렌 버핏, 레이 달리오, 손정의 등 우리 주변에는 각자만의 색깔로
-				투자를 하는 유명한 투자자들이 있습니다. 이 중에 당신은 어떤
-				투자자에 가장 가까운지 알아볼까요??
+				우리 주변에는 10~200조 규모의 펀드를 운용하는 투자자들이
+				있습니다. 버크셔 헤서웨이의 워렌 버핏, 브리지 워터의 레이
+				달리오, 소프트 뱅크의 손정의 등 많은 거물 투자자들이 자신만의
+				색깔로 전세계를 대상으로 돈을 벌어들이고 있습니다. 여러분은 이
+				투자자들 중 어떤 투자자의 성향과 가장 비슷한지 알아볼까요?
 			</Text>
-			<Flex justifyContent="center">
+			<Flex justifyContent="center" fontSize={2}>
 				<Button
 					onClick={() => {
 						window.analytics.track(
