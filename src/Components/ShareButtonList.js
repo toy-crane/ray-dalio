@@ -82,9 +82,9 @@ export const ShareButtonList = () => {
 				</TwitterShareButton>
 			</Box>
 			<Box mx="8px">
-				<a
+				<Link
 					id="kakao-link-btn"
-					style={{ cursor: "pointer" }}
+					sx={{ cursor: "pointer" }}
 					onClick={ShareToKakao}
 				>
 					<Image
@@ -92,7 +92,7 @@ export const ShareButtonList = () => {
 						width="48px"
 						height="48px"
 					/>
-				</a>
+				</Link>
 			</Box>
 		</Flex>
 	);
