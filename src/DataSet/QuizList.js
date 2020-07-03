@@ -63,7 +63,7 @@ export const QUIZ_LIST = [
 			{
 				text: "10억 이상",
 				code: "g00",
-				character_code: "a",
+				character_code: "g",
 				risk_score: 0,
 				period_score: 0,
 			},

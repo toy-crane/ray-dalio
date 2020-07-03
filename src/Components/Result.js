@@ -29,12 +29,20 @@ export const Result = (props) => {
 			books,
 			r_score,
 			p_score,
+			i_score,
+			b_score,
 		} = REPORTS[characterCode];
 		return (
 			<>
 				<Header>나의 투자 성향과 비슷한 투자자는?</Header>
 				<Image src={image_url} sx={{ margin: "10px auto" }} />
-				<ScoreBarList mb={2} r_score={r_score} p_score={p_score} />
+				<ScoreBarList
+					mb={2}
+					r_score={r_score}
+					p_score={p_score}
+					i_score={i_score}
+					b_score={b_score}
+				/>
 				<HashTagText mb={2} text={hash_tags} />
 				<BodyText mb={2} text={text} />
 				<Recommendation
@@ -42,10 +50,7 @@ export const Result = (props) => {
 					good_pick={good_pick}
 					bad_pick={bad_pick}
 				/>
-				<Advertisement
-					mb={2}
-					books={books}
-				/>
+				<Advertisement mb={2} books={books} />
 				<ShareSection mb={2} />
 				<RefreshButton mb={2} />
 				<FacebookShareButton />

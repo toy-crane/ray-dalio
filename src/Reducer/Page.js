@@ -19,15 +19,21 @@ const URL_LIST = {
 	m: "vision",
 };
 
-const getSpecialCharacter = (character_codes) => {
+const getSpecialCharacter = (character_codes, risk_score, period_score) => {
 	let characters = [];
 	const character_codes_str = character_codes.join("");
 	for (const code of SPECIAL_CHARACTER_CODES) {
 		const count = (character_codes_str.match(new RegExp(code, "g")) || [])
 			.length;
 		if (count >= 1) {
-			if (count === 2 && code === "g") {
-				characters.push(code);
+			if (code === "g") {
+				if (count === 2) {
+					characters.push(code);
+				}
+			} else if (code === "d") {
+				if (risk_score > 23) {
+					characters.push(code);
+				}
 			} else {
 				characters.push(code);
 			}
@@ -37,7 +43,11 @@ const getSpecialCharacter = (character_codes) => {
 };
 
 const findCharacter = (risk_score, period_score, character_codes) => {
-	const specialCharacter = getSpecialCharacter(character_codes);
+	const specialCharacter = getSpecialCharacter(
+		character_codes,
+		risk_score,
+		period_score
+	);
 	if (specialCharacter) {
 		return specialCharacter;
 	} else {
