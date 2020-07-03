@@ -47,13 +47,13 @@ export const Head = () => {
 				rel="icon"
 				type="image/png"
 				sizes="64x64"
-				href="favicons/favicon-64x64.png"
+				href="/favicons/favicon-64x64.png"
 			/>
 			<link
 				rel="icon"
 				type="image/png"
 				sizes="32x32"
-				href="favicons/favicon-32x32.png"
+				href="/favicons/favicon-32x32.png"
 			/>
 		</Helmet>
 	);
