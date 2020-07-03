@@ -21,7 +21,7 @@ const customCSS = (theme) => ({
 export const BodyText = (props) => {
 	const theme = useTheme();
 	return (
-		<Flex px={[1, 2]} py={1}>
+		<Flex px={[1, 5]} py={1}>
 			<Text css={() => customCSS(theme)}>
 				<ShowMore lines={2} more="더 알아보기" less="접기">
 					{props.text}

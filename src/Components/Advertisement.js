@@ -18,7 +18,7 @@ export const Advertisement = (props) => {
 							🤓
 						</span>
 					</Text>
-					<Flex justifyContent="center" my={1}>
+					<Flex justifyContent="center">
 						<CoupangCard
 							url={gBook.url}
 							imageUrl={gBook.imageUrl}

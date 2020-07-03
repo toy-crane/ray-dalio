@@ -6,7 +6,7 @@ export const ScoreBarList = (props) => {
 	const { p_score, r_score, i_score, b_score } = props;
 	return (
 		<>
-			<Box p={1}>
+			<Box py={1} px={[1, 5]} {...props}>
 				<ScoreBar my={1} title="투기력" score={r_score} />
 				<ScoreBar my={1} title="존버력" score={p_score} />
 				<ScoreBar my={1} title="매매력" score={b_score} />

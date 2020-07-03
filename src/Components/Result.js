@@ -35,7 +35,7 @@ export const Result = (props) => {
 		return (
 			<>
 				<Header>나의 투자 성향과 비슷한 투자자는?</Header>
-				<Image src={image_url} sx={{ margin: "10px auto" }} />
+				<Image src={image_url} sx={{ margin: "20px auto" }} />
 				<ScoreBarList
 					mb={2}
 					r_score={r_score}
@@ -43,7 +43,7 @@ export const Result = (props) => {
 					i_score={i_score}
 					b_score={b_score}
 				/>
-				<HashTagText mb={2} text={hash_tags} />
+				<HashTagText text={hash_tags} />
 				<BodyText mb={2} text={text} textAlign="center" />
 				<Recommendation
 					mb={2}
@@ -53,7 +53,7 @@ export const Result = (props) => {
 				<Advertisement mb={2} books={books} />
 				<ShareSection mb={2} />
 				<RefreshButton mb={2} />
-				<FacebookShareButton />
+				<FacebookShareButton mb={2} />
 			</>
 		);
 	}
