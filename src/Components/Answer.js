@@ -12,6 +12,7 @@ export const Answer = (props) => {
 	const onClick = () => {
 		if (page < QUIZ_LIST.length) {
 			dispatch({ type: "next", payload: { code } });
+			window.analytics.track("Answer Clicked", { code: code });
 		} else {
 			dispatch({ type: "getCharacter", payload: { code } });
 		}
