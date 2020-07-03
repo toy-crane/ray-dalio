@@ -14,6 +14,7 @@ export default {
 		secondary: "#293053",
 		grey: "#A9A0EF",
 		deepGray: "#BABABA",
+		brightenGray: "#ECECEC",
 	},
 	buttons: {
 		primary: {

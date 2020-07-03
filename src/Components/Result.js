@@ -44,7 +44,7 @@ export const Result = (props) => {
 					b_score={b_score}
 				/>
 				<HashTagText mb={2} text={hash_tags} />
-				<BodyText mb={2} text={text} />
+				<BodyText mb={2} text={text} textAlign="center" />
 				<Recommendation
 					mb={2}
 					good_pick={good_pick}

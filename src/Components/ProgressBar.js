@@ -8,7 +8,7 @@ export const ProgressBar = (props) => {
 		<Box
 			height="20px"
 			width={1}
-			backgroundColor="deepGray"
+			backgroundColor="brightenGray"
 			sx={{
 				borderRadius: 50,
 			}}
