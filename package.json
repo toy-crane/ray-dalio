@@ -21,6 +21,7 @@
 		"react-scripts": "3.4.1",
 		"react-share": "^4.2.0",
 		"react-share-kakao": "0.0.5",
+		"react-show-more": "^2.0.0",
 		"react-social-kr": "^1.1.9",
 		"rebass": "^4.0.7",
 		"semantic-ui-react": "^0.88.2"
