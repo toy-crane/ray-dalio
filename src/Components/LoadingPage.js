@@ -10,11 +10,11 @@ export const LoadingPage = () => {
 		state: { url },
 	} = useContext(PageContext);
 	useEffect(() => {
-		const timer = setTimeout(() => {
-			window.analytics.page();
-			history.push(`/result/${url}`);
-		}, 5000);
-		return () => clearTimeout(timer);
+		// const timer = setTimeout(() => {
+		// 	window.analytics.page();
+		// 	history.push(`/result/${url}`);
+		// }, 5000);
+		// return () => clearTimeout(timer);
 	}, [history, url]);
 
 	return (
@@ -28,7 +28,7 @@ export const LoadingPage = () => {
 					margin: "0 auto",
 				}}
 				height={["200px", "auto"]}
-				width={["200px", "auto"]}
+				width={["200px", 3 / 5]}
 			>
 				<Image src="/loading.gif" alt="loading..." />
 			</Flex>
