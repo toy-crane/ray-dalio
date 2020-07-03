@@ -10,11 +10,11 @@ export const LoadingPage = () => {
 		state: { url },
 	} = useContext(PageContext);
 	useEffect(() => {
-		// const timer = setTimeout(() => {
-		// 	window.analytics.page();
-		// 	history.push(`/result/${url}`);
-		// }, 5000);
-		// return () => clearTimeout(timer);
+		const timer = setTimeout(() => {
+			window.analytics.page();
+			history.push(`/result/${url}`);
+		}, 5000);
+		return () => clearTimeout(timer);
 	}, [history, url]);
 
 	return (
