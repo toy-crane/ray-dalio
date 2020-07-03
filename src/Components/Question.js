@@ -7,6 +7,7 @@ const CustomStyled = {
 	py: "24px",
 	fontWeight: "bold",
 	lineHeight: "question",
+	textAlign: "center",
 };
 
 export const Question = ({ question }) => {
