@@ -10,8 +10,8 @@ export const Advertisement = (props) => {
 	if (loaded && !error) {
 		return (
 			<>
-				<Box textAlign="center" {...props} p={1}>
-					<Text color="secondary" fontWeight="bold" p={1}>
+				<Box textAlign="center" {...props}>
+					<Text color="secondary" fontWeight="bold" mb={1}>
 						내 성향에 딱! 맞는 추천 도서
 						<span role="img" aria-label="glasses">
 							{" "}

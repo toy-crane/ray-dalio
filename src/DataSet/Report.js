@@ -118,7 +118,7 @@ export const REPORTS = {
 		},
 		image_url: "/characters/g.png",
 		og_image_url: "https://www.usaant.kr/opengraph/g.png",
-		og_title: "저는 금수저에요!",
+		og_title: "저는 금수저에요",
 	},
 	irondragon: {
 		text:
@@ -136,7 +136,7 @@ export const REPORTS = {
 		},
 		image_url: "/characters/c.png",
 		og_image_url: "https://www.usaant.kr/opengraph/c.png",
-		og_title: "저는 곽철용과 비슷한 투자자입니다.",
+		og_title: "저는 타짜의 곽철용과 비슷한 투자자입니다",
 	},
 	bigear: {
 		text:
@@ -154,13 +154,12 @@ export const REPORTS = {
 		},
 		image_url: "/characters/e.png",
 		og_image_url: "https://www.usaant.kr/opengraph/e.png",
-		og_title: "저는 귀가 너무 커서 슬픈 투자자에요!",
+		og_title: "저는 귀가 너무 커서 슬픈 투자자에요",
 	},
 	pyeonggyeongjang: {
 		text:
 			"하루에 매매를 정말 많이 하시는 스타일이시네요. 전국의 도박판을 찾아 해매는 타짜들처럼 돈이 되는 종목을 찾아 이 곳 저 곳을 배회하는 성향을 가지신 것 같아요. 게다가 타짜들 처럼 거래 한 번 한 번에 버는 수익에 큰 희열을 느끼시는 것 같아요.  타짜에서는 전설의 도박꾼 평경장이 있듯이, 주식판의 전설적 투자자 평경장이 될 수 있도록 응원할께요!",
-		hash_tags:
-			"#혼이 담긴 클릭 #이 바닥엔 영원한 수익도 손실도 없어 #돈을 벌고 싶니?",
+		hash_tags: "#혼이 담긴 클릭 #이 바닥엔 영원한 수익도 손실도 없어",
 		r_score: 85,
 		p_score: 10,
 		i_score: 73,
@@ -173,7 +172,7 @@ export const REPORTS = {
 		},
 		image_url: "/characters/p.png",
 		og_image_url: "https://www.usaant.kr/opengraph/p.png",
-		og_title: "저는 평경장입니다!",
+		og_title: "저는 평경장입니다",
 	},
 	departingbus: {
 		text:
@@ -191,7 +190,7 @@ export const REPORTS = {
 		},
 		image_url: "/characters/b.png",
 		og_image_url: "https://www.usaant.kr/opengraph/b.png",
-		og_title: "저는 미련이 많은 투자자에요!",
+		og_title: "저는 미련이 많아 슬픈 투자자에요",
 	},
 	paperfactory: {
 		text:
@@ -211,7 +210,7 @@ export const REPORTS = {
 		g_book_url: "https://coupa.ng/bEU2xd",
 		image_url: "/characters/t.png",
 		og_image_url: "https://www.usaant.kr/opengraph/t.png",
-		og_title: "저는 휴지 공장 공장장이에요!",
+		og_title: "저는 휴지 공장 공장장이에요",
 	},
 	raydalio: {
 		text:
@@ -229,7 +228,7 @@ export const REPORTS = {
 		},
 		image_url: "/characters/y.png",
 		og_image_url: "https://www.usaant.kr/opengraph/y.png",
-		og_title: "저는 분산 투자의 대가 레이 달리오와 비슷해요!",
+		og_title: "저는 분산 투자의 대가 레이 달리오와 비슷해요",
 	},
 	gub: {
 		text:

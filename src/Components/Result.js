@@ -11,6 +11,7 @@ import { RefreshButton } from "./RefreshButton";
 import { Redirect } from "react-router-dom";
 import { REPORTS } from "../DataSet/Report";
 import { ResultText } from "./ResultText";
+import { Line } from "./Line";
 
 export const Result = (props) => {
 	const characterCode = props.match.params.code.toLowerCase();
@@ -34,22 +35,27 @@ export const Result = (props) => {
 		} = REPORTS[characterCode];
 		return (
 			<>
-				<Header>나의 투자 성향과 비슷한 투자자는?</Header>
-				<Image src={image_url} sx={{ margin: "20px auto" }} />
+				<Header mb={1}>나의 투자 성향과 비슷한 투자자는?</Header>
+				<Image src={image_url} mb={4} />
+				<Line />
 				<ScoreBarList
-					mb={2}
+					mb={4}
 					r_score={r_score}
 					p_score={p_score}
 					i_score={i_score}
 					b_score={b_score}
 				/>
-				<ResultText hash_tags={hash_tags} text={text} />
+				<Line />
+				<ResultText hash_tags={hash_tags} text={text} mb={4} />
+				<Line />
 				<Recommendation
-					mb={2}
+					mb={4}
 					good_pick={good_pick}
 					bad_pick={bad_pick}
 				/>
-				<Advertisement mb={2} books={books} />
+				<Line />
+				<Advertisement mb={4} books={books} />
+				<Line />
 				<ShareSection mb={2} />
 				<RefreshButton mb={2} />
 				<FacebookShareButton mb={2} />

@@ -8,7 +8,6 @@ export const HashTagText = (props) => {
 			{...props}
 			justifyContent="center"
 			alignContent="center"
-			mb={0}
 			color="secondary"
 			fontWeight="bold"
 		>

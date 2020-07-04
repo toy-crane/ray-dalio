@@ -3,13 +3,16 @@ import { Box } from "rebass";
 
 const CustomStyled = {
 	width: "100%",
-	fontSize: [1, 3],
-	py: "24px",
+	fontSize: 3,
 	fontWeight: "bold",
 	lineHeight: "question",
 	textAlign: "center",
 };
 
-export const Question = ({ question }) => {
-	return <Box sx={CustomStyled}>{question}</Box>;
+export const Question = (props) => {
+	return (
+		<Box sx={CustomStyled} {...props}>
+			{props.question}
+		</Box>
+	);
 };
