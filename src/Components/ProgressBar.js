@@ -6,7 +6,7 @@ export const ProgressBar = (props) => {
 
 	return (
 		<Box
-			height="20px"
+			height="10px"
 			width={1}
 			backgroundColor="brightenGray"
 			sx={{

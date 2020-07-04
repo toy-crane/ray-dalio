@@ -1,6 +1,6 @@
 export default {
 	breakpoints: ["600px", "2000px", "3000px"],
-	fontSizes: [12, 14, 16, 18, 20, 24, 32],
+	fontSizes: [12, 14, 16, 18, 20, 24, 28],
 	space: [0, 10, 20, 30, 40, 50, 80],
 	lineHeights: {
 		heading: "1.25em",

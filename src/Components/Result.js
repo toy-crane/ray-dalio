@@ -35,7 +35,7 @@ export const Result = (props) => {
 		} = REPORTS[characterCode];
 		return (
 			<>
-				<Header mb={1}>나의 투자 성향과 비슷한 투자자는?</Header>
+				<Header mb={1}>나와 비슷한 성향의 투자자는?</Header>
 				<Image src={image_url} mb={4} />
 				<Line />
 				<ScoreBarList
