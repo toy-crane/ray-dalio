@@ -356,7 +356,7 @@ export const QUIZ_LIST = [
 	{
 		id: 11,
 		question:
-			"새로운 바이러스가 발병해 연초 대비 지수가 50% 폭락했습니다. 5000만원을 어떻게 투자 하실건가요?",
+			"코로나가 소강상태에 접어들면서 저점대비 50% 가까이 올랐습니다. 5000만원을 앞으로 어떻게 투자 하실건가요?",
 		answers: [
 			{
 				text: "지금의 상황이 무서워 현금을 보유하고 관망한다. ",
@@ -366,7 +366,7 @@ export const QUIZ_LIST = [
 				period_score: 0,
 			},
 			{
-				text: "더 떨어 질수도 있으니 500만원씩 나누어 분할 매수한다.",
+				text: "추가로 오를수도 있으니 500만원씩 나누어 분할 매수한다.",
 				code: "a20",
 				character_code: "a",
 				risk_score: 2,
@@ -374,7 +374,7 @@ export const QUIZ_LIST = [
 			},
 			{
 				text:
-					"과거의 데이터로 봤을 때 지금이 가장 저점이다. 우량주에 모두 투자한다.",
+					"과거의 데이터로 봤을 때 아직 멀었다. 우량주에 모두 투자한다.",
 				code: "a30",
 				character_code: "a",
 				risk_score: 3,
@@ -382,7 +382,7 @@ export const QUIZ_LIST = [
 			},
 			{
 				text:
-					"신이 주신 기회다. 전부 투자하고, 그 투자금을 담보로 또 투자한다.",
+					"더!더!더! 간다. 전부 투자하고, 그 투자금을 담보로 또 투자한다.",
 				code: "c40",
 				character_code: "c",
 				risk_score: 4,

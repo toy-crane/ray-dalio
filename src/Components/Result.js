@@ -17,7 +17,10 @@ export const Result = (props) => {
 	const characterCode = props.match.params.code.toLowerCase();
 	useEffect(() => {
 		window.analytics.page();
-	}, []);
+		window.analytics.track("Character Page Viewed", {
+			code: characterCode,
+		});
+	}, [characterCode]);
 	if (!characterCode || !(characterCode in REPORTS)) {
 		return <Redirect to="/" />;
 	} else {
