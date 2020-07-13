@@ -108,14 +108,14 @@ export const QUIZ_LIST = [
 		question: "나의 주식 매매 스타일은?",
 		answers: [
 			{
-				text: "투자금이 생길 때만 투자하려고 했던 주식만 매입한다. ",
+				text: "계획한 주식만 매입하고, 장기 보유한다.",
 				code: "a14",
 				character_code: "a",
 				risk_score: 1,
 				period_score: 4,
 			},
 			{
-				text: "한달에 10번 이상 여러 종목을 샀다가 팔았다가 한다.",
+				text: "한달에 10번 이상 종목을 샀다가 팔았다가 한다.",
 				code: "a23",
 				character_code: "a",
 				risk_score: 2,
@@ -143,7 +143,7 @@ export const QUIZ_LIST = [
 			"보유하고 있는 주식이 내일 60% 확률로 떨어진다고 합니다. 어떻게 하실건가요?",
 		answers: [
 			{
-				text: "일부만 팔고, 일부 그대로 두어 40% 상승에 베팅한다.",
+				text: "일부만 팔고, 그대로 두어 40% 상승에 베팅한다.",
 				code: "a10",
 				character_code: "a",
 				risk_score: 1,
@@ -225,7 +225,7 @@ export const QUIZ_LIST = [
 				period_score: 0,
 			},
 			{
-				text: "IT 수요가 높아질테니 성장성이 높은 IT 주식을 매입한다.",
+				text: "성장성이 높은 IT 주식을 매입한다.",
 				code: "a30",
 				character_code: "a",
 				risk_score: 3,
@@ -253,14 +253,14 @@ export const QUIZ_LIST = [
 			"A 주식에 500만원을 투자했습니다. 주식을 어느 주기로 확인하시나요?",
 		answers: [
 			{
-				text: "오늘 장이 어땠는지 출근, 퇴근 시간 정도에만 확인한다.",
+				text: "오늘 장이 어땠는지 출퇴근 시간에만 확인한다.",
 				code: "a11",
 				character_code: "a",
 				risk_score: 1,
 				period_score: 0,
 			},
 			{
-				text: "먼 미래를 보고 투자했으니, 확인할 필요도 없다.",
+				text: "먼 미래를 보고 투자했으므로 확인할 필요가 없다.",
 				code: "a12",
 				character_code: "a",
 				risk_score: 1,
@@ -309,7 +309,7 @@ export const QUIZ_LIST = [
 				period_score: 0,
 			},
 			{
-				text: "리스크를 감수하는 투자라면 10% 이상되는 투자만 한다.",
+				text: "최소 10% 이상 수익이 예상되는 투자만 한다.",
 				code: "a40",
 				character_code: "a",
 				risk_score: 4,
@@ -345,7 +345,7 @@ export const QUIZ_LIST = [
 				period_score: 0,
 			},
 			{
-				text: "배가 아파 조건 없이 다음날 바로 투자한다.",
+				text: "바로 산다.",
 				code: "t40",
 				character_code: "t",
 				risk_score: 3,
