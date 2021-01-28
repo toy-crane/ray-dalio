@@ -8,6 +8,9 @@ export default {
 		button: "1.5em",
 		body: "1.66em",
 	},
+	fonts: {
+		heading: "inherit",
+	},
 	colors: {
 		background: "#FEFEFE",
 		primary: "#7362FF",
